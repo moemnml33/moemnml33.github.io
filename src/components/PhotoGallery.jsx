@@ -38,7 +38,7 @@ export default function PhotoGallery() {
           alt="moebooka"
         />
       </div>
-      <div className="h-96"></div>
+      <div className="h-80 md:h-96"></div>
     </>
   );
 }

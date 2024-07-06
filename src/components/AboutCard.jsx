@@ -44,15 +44,16 @@ export default function AboutCard() {
             Junior web and mobile developer, independent artist.
           </Typography>
           <Typography className="text-slate-500 dark:text-zinc-400">
-            I'm Mohamad, a software developer and independent DJ from Montreal,
-            and currently a fourth-year computer science student at Concordia
-            University. It all started with a simple Hello World...
+            I'm Mohamad, a junior software developer with up to one year of work
+            experience and an independent DJ from Montreal, and currently a
+            fourth-year computer science student at Concordia University. It all
+            started with a simple Hello World...
           </Typography>
         </CardBody>
         <CardFooter className="px-0 pt-4 pb-8">
           <div class="flex gap-4">
             <button
-              class="w-8 relative align-center text-xs text-zinc-400 hover:text-zinc-100 duration-300 ease-in-out"
+              class="w-8 relative align-center text-xs text-zinc-400 hover:text-cyan-400 duration-300 ease-in-out"
               type="button"
               onClick={handleGithub}
             >
@@ -61,7 +62,7 @@ export default function AboutCard() {
               </span>
             </button>
             <button
-              class="w-8 relative align-center text-xs text-zinc-400 hover:text-zinc-100 duration-300 ease-in-out"
+              class="w-8 relative align-center text-xs text-zinc-400 hover:text-cyan-400 duration-300 ease-in-out"
               type="button"
               onClick={handleLinkedin}
             >
@@ -70,7 +71,7 @@ export default function AboutCard() {
               </span>
             </button>
             <button
-              class="w-8 relative align-center text-xs text-zinc-400 hover:text-zinc-100 duration-300 ease-in-out"
+              class="w-8 relative align-center text-xs text-zinc-400 hover:text-cyan-400 duration-300 ease-in-out"
               type="button"
               onClick={handleInstagram}
             >
@@ -79,7 +80,7 @@ export default function AboutCard() {
               </span>
             </button>
             <button
-              class="w-8 relative align-center text-xs text-zinc-400 hover:text-zinc-100 duration-300 ease-in-out"
+              class="w-8 relative align-center text-xs text-zinc-400 hover:text-cyan-400 duration-300 ease-in-out"
               type="button"
               onClick={handleSoundcloud}
             >
@@ -88,7 +89,7 @@ export default function AboutCard() {
               </span>
             </button>
             <button
-              class="w-8 relative align-center text-xs text-zinc-400 hover:text-zinc-100 duration-300 ease-in-out"
+              class="w-8 relative align-center text-xs text-zinc-400 hover:text-cyan-400 duration-300 ease-in-out"
               type="button"
               onClick={handleTwitch}
             >
@@ -97,7 +98,7 @@ export default function AboutCard() {
               </span>
             </button>
             <button
-              class="w-8 relative align-center text-xs text-zinc-400 hover:text-zinc-100 duration-300 ease-in-out"
+              class="w-8 relative align-center text-xs text-zinc-400 hover:text-cyan-400 duration-300 ease-in-out"
               type="button"
               onClick={handleDiscord}
             >

@@ -4,7 +4,7 @@ import { Navbar, Typography } from "@material-tailwind/react";
 // const LINKS = ["About", "Experience", "Education", "Uses"];
 const LINKS = [
   { title: "About", link: "#about" },
-  { title: "Skills", link: "#akills" },
+  { title: "Skills", link: "#skills" },
   { title: "Experience", link: "#" },
   { title: "Projects", link: "#" },
   { title: "Education", link: "#" },
@@ -25,7 +25,7 @@ export default function SimpleNavbar() {
           <a
             key={index}
             href={item.link}
-            className="mx-4 cursor-pointer py-1.5 text-sm font-medium hover:text-cyan-400 duration-300 ease-in-out"
+            className="mx-2 md:mx-4 cursor-pointer py-1.5 text-sm font-medium hover:text-cyan-400 duration-300 ease-in-out"
           >
             {item.title}
           </a>

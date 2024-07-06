@@ -12,12 +12,6 @@ function App() {
         <SimpleNavbar />
         <AboutCard />
         <PhotoGallery />
-        {/* <div>
-          <img
-            className="mx-auto"
-            src="https://skillicons.dev/icons?i=java,python,react,html,css,js,bootstrap,php"
-          />
-        </div> */}
         <Skills />
       </div>
     </>

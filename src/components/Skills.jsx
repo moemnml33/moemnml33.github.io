@@ -8,6 +8,7 @@ import {
   HashtagIcon,
   EyeIcon,
   DocumentTextIcon,
+  DevicePhoneMobileIcon,
 } from "@heroicons/react/24/solid";
 import { SkillCard } from "./SkillCard";
 
@@ -19,7 +20,7 @@ const SKILLS = [
       "Creating beautiful and functional web experiences is my forte. Using the latest technologies and best practices, I design and build experiences that captivate and engage users.",
   },
   {
-    icon: FingerPrintIcon,
+    icon: DevicePhoneMobileIcon,
     title: "Mobile App Development",
     children:
       "I am on a journey to master the art of creating responsive and intuitive mobile apps. My focus is on ensuring seamless performance across both iOS and Android devices, as I continuously explore and integrate the latest development techniques and best practices.",
@@ -67,7 +68,7 @@ export function Skills() {
           experiences for my audience.
         </Typography>
       </div>
-      <div className="container mx-auto grid grid-cols-1 gap-x-4 gap-y-4 md:grid-cols-2 ">
+      <div className="container mx-auto grid grid-cols-1 gap-x-8 gap-y-4 md:grid-cols-2 justify-between">
         {SKILLS.map((props, idx) => (
           <SkillCard key={idx} {...props} />
         ))}

@@ -34,7 +34,7 @@ const SKILLS = [
     icon: SwatchIcon,
     title: "Technology Stack",
     children:
-      "I'm well-versed in the industry's leading technologies, including frontend tools like HTML5, CSS3, JavaScript, and frameworks such as React, React Native, and Tailwind. Additionally, I have extensive experience with Python, Java, and database management using MySQL.",
+      "I'm well-versed in the industry's leading technologies, including frontend tools like HTML5, CSS3, JS, and frameworks such as React, React Native, and Tailwind. Additionally, I have extensive experience with Python, Java, and database management using MySQL.",
   },
   //   {
   //     icon: HashtagIcon,
@@ -52,7 +52,7 @@ const SKILLS = [
 
 export function Skills() {
   return (
-    <section className="px-8" id="skills">
+    <section className="px-8 mb-10" id="skills">
       <div className="container mx-auto mb-10 text-center">
         <Typography color="white" className="mb-2 font-bold uppercase">
           my skills
@@ -67,7 +67,7 @@ export function Skills() {
           experiences for my audience.
         </Typography>
       </div>
-      <div className="container mx-auto grid grid-cols-1 gap-y-4 md:grid-cols-2 ">
+      <div className="container mx-auto grid grid-cols-1 gap-x-4 gap-y-4 md:grid-cols-2 ">
         {SKILLS.map((props, idx) => (
           <SkillCard key={idx} {...props} />
         ))}

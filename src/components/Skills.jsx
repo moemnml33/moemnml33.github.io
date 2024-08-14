@@ -62,10 +62,19 @@ export function Skills() {
           What I do
         </Typography>
         <Typography className="mx-auto w-full dark:text-zinc-400 lg:w-10/12">
-          I&apos;m not just a developer; I&apos;m a curator of digital
-          experiences. My passion lies in blending creativity with technology,
-          whether I'm developing apps or DJing, to design and craft memorable
-          experiences for my audience.
+          I&apos;m not just a developer; I&apos;m a{" "}
+          <Typography className="inline text-cyan-600">
+            curator of digital experiences
+          </Typography>
+          . My passion lies in{" "}
+          <Typography className="inline text-cyan-600">
+            blending creativity with technology
+          </Typography>
+          , whether I'm developing apps or DJing, to{" "}
+          <Typography className="inline text-cyan-600">
+            design and craft memorable experiences for my audience
+          </Typography>
+          .
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-8 gap-y-4 md:grid-cols-2 justify-between">

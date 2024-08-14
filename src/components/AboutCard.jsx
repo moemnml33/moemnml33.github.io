@@ -44,10 +44,16 @@ export default function AboutCard() {
             Junior web and mobile developer, independent artist.
           </Typography>
           <Typography className="text-slate-500 dark:text-zinc-400">
-            I'm Mohamad, a junior software developer with up to one year of work
-            experience and an independent DJ from Montreal, and currently a
-            fourth-year computer science student at Concordia University. It all
-            started with a simple Hello World...
+            I'm Mohamad, a{" "}
+            <Typography className="inline text-cyan-600">
+              junior software developer
+            </Typography>{" "}
+            with up to one year of work experience and an independent DJ from
+            Montreal, and currently a{" "}
+            <Typography className="inline text-cyan-600">
+              fourth-year computer science student
+            </Typography>{" "}
+            at Concordia University. It all started with a simple Hello World...
           </Typography>
         </CardBody>
         <CardFooter className="px-0 pt-4 pb-8">

@@ -8,7 +8,7 @@ import Skills from "./components/Skills";
 function App() {
   return (
     <>
-      <div className=" container flex-col justify-center md:w-10/12 bg-zinc-900 border-x border-zinc-700">
+      <div className=" container flex-col justify-center sm:w-11/12 sm:bg-zinc-900 sm:border-x sm:border-zinc-700">
         <SimpleNavbar />
         <AboutCard />
         <PhotoGallery />

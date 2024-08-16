@@ -1,16 +1,21 @@
 import React from "react";
-import { Navbar, Typography } from "@material-tailwind/react";
+import { Navbar } from "@material-tailwind/react";
 
-// const LINKS = ["About", "Experience", "Education", "Uses"];
 const LINKS = [
   { title: "About", link: "#about" },
   { title: "Skills", link: "#skills" },
-  { title: "Experience", link: "#" },
-  { title: "Projects", link: "#" },
-  { title: "Education", link: "#" },
+  { title: "Experience", link: "#experience" },
+  { title: "Projects", link: "#projects" },
+  { title: "Education", link: "#education" },
 ];
 
 export default function SimpleNavbar() {
+  const handleScroll = (event, link) => {
+    event.preventDefault();
+    const section = document.querySelector(link);
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
+
   React.useEffect(() => {
     window.addEventListener(
       "resize",
@@ -25,12 +30,13 @@ export default function SimpleNavbar() {
           <a
             key={index}
             href={item.link}
+            onClick={(event) => handleScroll(event, item.link)}
             className="mx-2 md:mx-4 cursor-pointer py-1.5 text-sm font-medium hover:text-cyan-400 duration-300 ease-in-out"
           >
             {item.title}
           </a>
         ))}
-        <span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
+        <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
       </div>
     </Navbar>
   );

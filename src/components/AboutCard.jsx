@@ -37,7 +37,7 @@ export default function AboutCard() {
       className="container flex flex-col gap py-2 px-10 max-w-[900px]"
       id="about"
     >
-      <Card className="my-8 bg-white dark:bg-zinc-900 shadow-transparent">
+      <Card className="my-8 bg-black sm:bg-zinc-900 shadow-transparent">
         <Avatar src={moebooka} alt="avatar" size="xl" />
         <CardBody className="p-0 pt-6">
           <Typography variant="h2" color="white" className="mb-2">
@@ -48,8 +48,9 @@ export default function AboutCard() {
             <Typography className="inline text-cyan-600">
               junior software developer
             </Typography>{" "}
-            with up to one year of work experience and an independent DJ from
-            Montreal, and currently a{" "}
+            from Montreal with up to one year of work experience as a software
+            engineering research assistant, as well as an independent DJ, and
+            currently a{" "}
             <Typography className="inline text-cyan-600">
               fourth-year computer science student
             </Typography>{" "}

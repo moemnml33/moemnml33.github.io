@@ -63,18 +63,18 @@ export function Skills() {
         </Typography>
         <Typography className="mx-auto w-full dark:text-zinc-400 lg:w-10/12">
           I&apos;m not just a developer; I&apos;m a{" "}
-          <Typography className="inline text-cyan-600">
+          <Typography className="inline text-cyan-600 font-semibold">
             curator of digital experiences
           </Typography>
           . My passion lies in{" "}
-          <Typography className="inline text-cyan-600">
+          <Typography className="inline text-cyan-600 font-semibold">
             blending creativity with technology
           </Typography>
           , whether I'm developing apps or DJing, to{" "}
-          <Typography className="inline text-cyan-600">
-            design and craft memorable experiences for my audience
-          </Typography>
-          .
+          <Typography className="inline text-cyan-600 font-semibold">
+            design and craft memorable experiences
+          </Typography>{" "}
+          for my audience.
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-8 gap-y-4 md:grid-cols-2 justify-between">

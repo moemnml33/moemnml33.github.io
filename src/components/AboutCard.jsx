@@ -43,15 +43,15 @@ export default function AboutCard() {
           <Typography variant="h2" color="white" className="mb-2">
             Junior web and mobile developer, independent artist.
           </Typography>
-          <Typography className="text-slate-500 dark:text-zinc-400">
+          <Typography className="text-slate-500 dark:text-zinc-400 ">
             I'm Mohamad, a{" "}
-            <Typography className="inline text-cyan-600">
+            <Typography className="inline text-cyan-600 font-semibold">
               junior software developer
             </Typography>{" "}
             from Montreal with up to one year of work experience as a software
             engineering research assistant, as well as an independent DJ, and
             currently a{" "}
-            <Typography className="inline text-cyan-600">
+            <Typography className="inline text-cyan-600 font-semibold">
               fourth-year computer science student
             </Typography>{" "}
             at Concordia University. It all started with a simple Hello World...

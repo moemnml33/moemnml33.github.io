@@ -81,7 +81,7 @@ const SKILLS = [
     icon: SwatchIcon,
     title: "Technology Stack",
     children: (
-      <div className="grid grid-cols-10 gap-1">
+      <div className="grid grid-cols-10 gap-1 md:grid-cols-5 lg:grid-cols-10">
         {TECH_ICONS_MAIN.map((element) => (
           <img src={element} />
         ))}

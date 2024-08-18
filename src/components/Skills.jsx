@@ -31,6 +31,7 @@ import eclipse from "../assets/tech-stack-icons/Eclipse.png";
 import androidstudio from "../assets/tech-stack-icons/AndroidStudio.png";
 import qt from "../assets/tech-stack-icons/QT.png";
 import ableton from "../assets/tech-stack-icons/Ableton.png";
+import { motion } from "framer-motion";
 
 const TECH_ICONS_MAIN = [
   java,
@@ -111,7 +112,17 @@ const SKILLS = [
 
 export function Skills() {
   return (
-    <section className="px-8 mb-10" id="skills">
+    <motion.section
+      className="px-8 mb-10"
+      id="skills"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: { delay: 0.1, duration: 0.8 },
+      }}
+      viewport={{ once: true, amount: 0.1 }}
+    >
       <div className="container mx-auto mb-10 text-center">
         <Typography color="white" className="mb-2 font-bold uppercase">
           my skills
@@ -140,7 +151,7 @@ export function Skills() {
           <SkillCard key={idx} {...props} />
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
 

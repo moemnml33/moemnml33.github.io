@@ -8,6 +8,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import moebooka from "../assets/moebooka.JPEG";
+import { motion } from "framer-motion";
 
 export default function AboutCard() {
   const handleGithub = () => {
@@ -33,9 +34,16 @@ export default function AboutCard() {
   };
 
   return (
-    <div
+    <motion.div
       className="container flex flex-col gap py-2 px-10 max-w-[900px]"
       id="about"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: { delay: 0.1, duration: 0.8 },
+      }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       <Card className="my-8 bg-black sm:bg-zinc-900 shadow-transparent">
         <Avatar src={moebooka} alt="avatar" size="xl" />
@@ -116,6 +124,6 @@ export default function AboutCard() {
           </div>
         </CardFooter>
       </Card>
-    </div>
+    </motion.div>
   );
 }

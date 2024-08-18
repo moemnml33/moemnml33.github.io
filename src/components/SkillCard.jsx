@@ -1,14 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Card,
   CardBody,
   CardHeader,
   Typography,
 } from "@material-tailwind/react";
+import { motion } from "framer-motion";
 
 export function SkillCard({ icon: Icon, title, children }) {
+  // code to disable border on touch screens aka mobile cause it does some weird behaviour where
+  // the border stays even after removing the hover
+  useEffect(() => {
+    const handleTouchEnd = () => {
+      document
+        .querySelectorAll(".hover\\:border-cyan-400")
+        .forEach((element) => {
+          element.style.borderColor = "transparent";
+        });
+    };
+
+    window.addEventListener("touchend", handleTouchEnd);
+    return () => window.removeEventListener("touchend", handleTouchEnd);
+  }, []);
+
   return (
-    <Card className="bg-zinc-800 rounded-3xl p-1 max-w-xl justify-self-center">
+    <motion.div
+      className="bg-zinc-800 rounded-3xl p-1 max-w-xl justify-self-center"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: { delay: 0, duration: 0.8 },
+      }}
+      viewport={{ once: true, amount: 0.1 }}
+    >
       <CardHeader
         className="flex items-center justify-between rounded-3xl overflow-visible bg-zinc-800 mt-1 mr-1"
         floated={false}
@@ -24,7 +49,7 @@ export function SkillCard({ icon: Icon, title, children }) {
       <CardBody className="grid justify-start px-4 pt-0 pb-3">
         <Typography className="!text-zinc-400 text-md">{children}</Typography>
       </CardBody>
-    </Card>
+    </motion.div>
   );
 }
 

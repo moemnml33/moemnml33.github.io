@@ -8,9 +8,9 @@ import {
 
 export function SkillCard({ icon: Icon, title, children }) {
   return (
-    <Card className="bg-zinc-800 rounded-3xl p-1">
+    <Card className="bg-zinc-800 rounded-3xl p-1 max-w-xl justify-self-center">
       <CardHeader
-        className="flex items-center justify-between rounded-none overflow-visible bg-zinc-800 mt-1 mr-1"
+        className="flex items-center justify-between rounded-3xl overflow-visible bg-zinc-800 mt-1 mr-1"
         floated={false}
         shadow={false}
       >
@@ -21,8 +21,8 @@ export function SkillCard({ icon: Icon, title, children }) {
           <Icon className="h-6 w-6" strokeWidth={2} />
         </div>
       </CardHeader>
-      <CardBody className="grid justify-start px-4 pt-2">
-        <Typography className="!text-zinc-400 text-sm">{children}</Typography>
+      <CardBody className="grid justify-start px-4 pt-0 pb-3">
+        <Typography className="!text-zinc-400 text-md">{children}</Typography>
       </CardBody>
     </Card>
   );

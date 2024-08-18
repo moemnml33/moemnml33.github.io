@@ -3,6 +3,7 @@ import deeper from "../assets/deeper.JPG";
 import cratediggers from "../assets/cratediggers.anon.png";
 import dj808 from "../assets/dj-808.JPG";
 import helloworld from "../assets/hello-world.png";
+import Tilt from "react-parallax-tilt";
 
 export default function PhotoGallery() {
   const handleCratedigger = () => {
@@ -11,32 +12,42 @@ export default function PhotoGallery() {
   return (
     <>
       <div className="flex flex-row space-x-6 rounded-xl overflow-x-auto bg-trasparent justify-center absolute inset-x-0 py-2 pb-16 no-scrollbar">
-        <img
-          className="object-cover object-center rounded-xl shadow-lg w-56 h-56 shadow-blue-gray-900/50 transform -rotate-2 md:h-72 md:w-72"
-          src={helloworld}
-          alt="helloworld"
-        />
-        <img
-          className="object-cover object-center rounded-xl shadow-lg w-56 h-56 shadow-blue-gray-900/50 transform rotate-2 md:h-72 md:w-72"
-          src={dj808}
-          alt="dj808"
-        />
-        <img
-          className="object-cover object-center rounded-xl shadow-lg w-56 h-56 shadow-blue-gray-900/50 transform -rotate-2 md:h-72 md:w-72"
-          src={deeper}
-          alt="deeper"
-        />
-        <img
-          className="object-contain object-center rounded-xl shadow-lg w-56 h-56 shadow-blue-gray-900/50 transform rotate-2 hover:cursor-pointer md:h-72 md:w-72"
-          src={cratediggers}
-          alt="cratediggers"
-          onClick={handleCratedigger}
-        />
-        <img
-          className="object-contain object-center rounded-xl shadow-lg w-56 h-56 shadow-blue-gray-900/50 transform -rotate-3 md:h-72 md:w-72"
-          src={moebooka}
-          alt="moebooka"
-        />
+        <Tilt>
+          <img
+            className="object-cover object-center rounded-xl shadow-lg w-56 h-56 shadow-blue-gray-900/50 transform -rotate-2 md:h-72 md:w-72"
+            src={helloworld}
+            alt="helloworld"
+          />
+        </Tilt>
+        <Tilt>
+          <img
+            className="object-cover object-center rounded-xl shadow-lg w-56 h-56 shadow-blue-gray-900/50 transform rotate-2 md:h-72 md:w-72"
+            src={dj808}
+            alt="dj808"
+          />
+        </Tilt>
+        <Tilt>
+          <img
+            className="object-cover object-center rounded-xl shadow-lg w-56 h-56 shadow-blue-gray-900/50 transform -rotate-2 md:h-72 md:w-72"
+            src={deeper}
+            alt="deeper"
+          />
+        </Tilt>
+        <Tilt>
+          <img
+            className="object-contain object-center rounded-xl shadow-lg w-56 h-56 shadow-blue-gray-900/50 transform rotate-2 hover:cursor-pointer md:h-72 md:w-72"
+            src={cratediggers}
+            alt="cratediggers"
+            onClick={handleCratedigger}
+          />
+        </Tilt>
+        <Tilt>
+          <img
+            className="object-contain object-center rounded-xl shadow-lg w-56 h-56 shadow-blue-gray-900/50 transform -rotate-3 md:h-72 md:w-72"
+            src={moebooka}
+            alt="moebooka"
+          />
+        </Tilt>
       </div>
       <div className="h-80 md:h-96"></div>
     </>

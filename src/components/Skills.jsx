@@ -81,13 +81,17 @@ const SKILLS = [
     icon: SwatchIcon,
     title: "Technology Stack",
     children: (
-      <div className="grid grid-cols-10 gap-1 md:grid-cols-5 lg:grid-cols-10">
-        {TECH_ICONS_MAIN.map((element) => (
-          <img src={element} />
-        ))}
-        {TECH_ICONS_SEC.map((element) => (
-          <img src={element} />
-        ))}
+      <div>
+        <div className="grid grid-cols-5 gap-y-1 gap-x-4 md:gap-x-1 lg:gap-x-4 xl:grid-cols-10 xl:gap-x-1 pb-1">
+          {TECH_ICONS_MAIN.map((element) => (
+            <img src={element} />
+          ))}
+        </div>
+        <div className="grid grid-cols-10 gap-1 md:grid-cols-5 lg:grid-cols-10">
+          {TECH_ICONS_SEC.map((element) => (
+            <img src={element} />
+          ))}
+        </div>
       </div>
     ),
   },

@@ -8,7 +8,7 @@ import {
 
 export function SkillCard({ icon: Icon, title, children }) {
   return (
-    <Card className="bg-zinc-800 rounded-3xl p-2">
+    <Card className="bg-zinc-800 rounded-3xl p-1">
       <CardHeader
         className="flex items-center justify-between rounded-none overflow-visible bg-zinc-800 mt-1 mr-1"
         floated={false}

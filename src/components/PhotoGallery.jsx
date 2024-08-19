@@ -22,36 +22,36 @@ export default function PhotoGallery() {
         }}
         viewport={{ once: true, amount: 0.1 }}
       >
-        <Tilt className="flex-shrink-0">
+        <Tilt className="flex-shrink-0" tiltReverse={true}>
           <img
             className="object-cover object-center rounded-xl shadow-lg w-56 h-56 shadow-blue-gray-900/50 transform -rotate-2 md:h-72 md:w-72"
             src={helloworld}
             alt="helloworld"
           />
         </Tilt>
-        <Tilt className="flex-shrink-0">
+        <Tilt className="flex-shrink-0" tiltReverse={true}>
           <img
             className="object-cover object-center rounded-xl shadow-lg w-56 h-56 shadow-blue-gray-900/50 transform rotate-2 md:h-72 md:w-72"
             src={dj808}
             alt="dj808"
           />
         </Tilt>
-        <Tilt className="flex-shrink-0">
+        <Tilt className="flex-shrink-0" tiltReverse={true}>
           <img
             className="object-cover object-center rounded-xl shadow-lg w-56 h-56 shadow-blue-gray-900/50 transform -rotate-2 md:h-72 md:w-72"
             src={deeper}
             alt="deeper"
           />
         </Tilt>
-        <Tilt className="flex-shrink-0">
+        <Tilt className="flex-shrink-0" tiltReverse={true}>
           <img
-            className="object-contain object-center rounded-xl shadow-lg w-56 h-56 shadow-blue-gray-900/50 transform rotate-2 hover:cursor-pointer md:h-72 md:w-72"
+            className="object-contain object-center rounded-xl shadow-lg w-56 h-56 shadow-blue-gray-900/50 transform rotate-2 hover:cursor-pointer md:h-72 md:w-72 border border-transparent hover:border-yellow-300 ease-in-out duration-300"
             src={cratediggers}
             alt="cratediggers"
             onClick={handleCratedigger}
           />
         </Tilt>
-        <Tilt className="flex-shrink-0">
+        <Tilt className="flex-shrink-0" tiltReverse={true}>
           <img
             className="object-contain object-center rounded-xl shadow-lg w-56 h-56 shadow-blue-gray-900/50 transform -rotate-3 md:h-72 md:w-72"
             src={moebooka}

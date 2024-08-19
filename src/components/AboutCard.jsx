@@ -35,7 +35,7 @@ export default function AboutCard() {
 
   return (
     <motion.div
-      className="container flex flex-col gap py-2 px-10 max-w-[900px]"
+      className="container flex flex-col gap py-2 px-10 max-w-[900px] my-12"
       id="about"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{
@@ -45,7 +45,7 @@ export default function AboutCard() {
       }}
       viewport={{ once: true, amount: 0.1 }}
     >
-      <Card className="my-8 bg-black sm:bg-zinc-900 shadow-transparent">
+      <Card className="my-8 bg-zinc-900 shadow-transparent">
         <Avatar src={moebooka} alt="avatar" size="xl" />
         <CardBody className="p-0 pt-6">
           <Typography variant="h2" color="white" className="mb-2">

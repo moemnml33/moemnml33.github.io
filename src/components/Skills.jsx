@@ -3,11 +3,8 @@
 import { Typography } from "@material-tailwind/react";
 import {
   RectangleGroupIcon,
-  FingerPrintIcon,
   SwatchIcon,
-  HashtagIcon,
   EyeIcon,
-  DocumentTextIcon,
   DevicePhoneMobileIcon,
 } from "@heroicons/react/24/solid";
 import { SkillCard } from "./SkillCard";

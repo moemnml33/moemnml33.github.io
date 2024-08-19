@@ -6,10 +6,10 @@ export default withMT({
     extend: {
       fontFamily: {
         sans: [
+          "-apple-system",
           "Poppins",
           "ui-sans-serif",
           "system-ui",
-          "-apple-system",
           "BlinkMacSystemFont",
           "Segoe UI",
           "Roboto",

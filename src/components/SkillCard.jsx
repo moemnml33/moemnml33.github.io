@@ -7,7 +7,7 @@ import {
 } from "@material-tailwind/react";
 import { motion } from "framer-motion";
 
-export function SkillCard({ icon: Icon, title, children }) {
+export function SkillCard({ icon: Icon, title, children, date }) {
   // code to disable border on touch screens aka mobile cause it does some weird behaviour where
   // the border stays even after removing the hover
   useEffect(() => {
@@ -25,7 +25,7 @@ export function SkillCard({ icon: Icon, title, children }) {
 
   return (
     <motion.div
-      className="bg-zinc-800 rounded-3xl p-1 max-w-xl justify-self-center"
+      className="bg-zinc-800 rounded-3xl p-1 max-w-xl justify-self-center shadow-md shadow-zinc-950/80"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{
         opacity: 1,
@@ -39,9 +39,14 @@ export function SkillCard({ icon: Icon, title, children }) {
         floated={false}
         shadow={false}
       >
-        <Typography variant="h5" color="white" className="w-full">
-          {title}
-        </Typography>
+        <div className="flex flex-col gap-1 w-full">
+          <Typography color="light-blue" className="font-medium text-xs">
+            {date}
+          </Typography>
+          <Typography variant="h5" color="white" className="w-full">
+            {title}
+          </Typography>
+        </div>
         <div className="grid mb-4 h-12 w-12 place-items-center rounded-full bg-gray-900 p-2.5 text-white shadow flex-shrink-0">
           <Icon className="h-6 w-6" strokeWidth={2} />
         </div>

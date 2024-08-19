@@ -25,7 +25,7 @@ export default function SimpleNavbar() {
           <a
             key={index}
             href={item.link}
-            className="mx-3 md:mx-4 cursor-pointer py-1.5 text-sm font-extralight hover:text-cyan-400 duration-300 ease-in-out text-zinc-200"
+            className="mx-3 md:mx-4 cursor-pointer py-1.5 text-sm font-light hover:text-cyan-400 duration-300 ease-in-out text-zinc-400"
           >
             {item.title}
           </a>

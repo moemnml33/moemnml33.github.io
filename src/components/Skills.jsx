@@ -6,6 +6,7 @@ import {
   SwatchIcon,
   EyeIcon,
   DevicePhoneMobileIcon,
+  LightBulbIcon,
 } from "@heroicons/react/24/solid";
 import { SkillCard } from "./SkillCard";
 import java from "../assets/tech-stack-icons/Java.png";
@@ -62,18 +63,35 @@ const SKILLS = [
     title: "User-Centric Design",
     children:
       "My development goes hand-in-hand with an eye for design. I create user interfaces that are not only functional but also aesthetically pleasing, providing a seamless and enjoyable user journey.",
+    date: "Soft Skills",
+  },
+  {
+    icon: LightBulbIcon,
+    title: "Attention To Detail",
+    children:
+      "Committed to exceptional code quality, intuitive user interface design, and thorough testing to deliver flawless, user-friendly web applications. Continuously striving to innovate and optimize, ensuring every project exceeds expectations.",
+    date: "Soft Skills",
+  },
+  {
+    icon: LightBulbIcon,
+    title: "Creative Thinking",
+    children:
+      "Committed to exceptional code quality, intuitive user interface design, and thorough testing to deliver flawless, user-friendly web applications. Continuously striving to innovate and optimize, ensuring every project exceeds expectations.",
+    date: "Soft Skills",
   },
   {
     icon: RectangleGroupIcon,
     title: "Frontend Web Development",
     children:
       "Creating beautiful and functional web experiences is my forte. Using the latest technologies and best practices, I design and build experiences that captivate and engage users.",
+    date: "Technical Skills",
   },
   {
     icon: DevicePhoneMobileIcon,
     title: "Mobile App Development",
     children:
       "I am on a journey to master the art of creating responsive and intuitive mobile apps. My focus is on ensuring seamless performance across both iOS and Android devices, as I continuously explore and integrate the latest development techniques and best practices.",
+    date: "Technical Skills",
   },
   {
     icon: SwatchIcon,
@@ -92,6 +110,7 @@ const SKILLS = [
         </div>
       </div>
     ),
+    date: "Technical Skills",
   },
   //   {
   //     icon: HashtagIcon,

@@ -30,7 +30,7 @@ export function SkillCard({ icon: Icon, title, children, date }) {
       whileInView={{
         opacity: 1,
         y: 0,
-        transition: { delay: 0, duration: 0.8 },
+        transition: { delay: 0, duration: 0.7 },
       }}
       viewport={{ once: true, amount: 0.1 }}
     >
@@ -47,7 +47,7 @@ export function SkillCard({ icon: Icon, title, children, date }) {
             {title}
           </Typography>
         </div>
-        <div className="grid mb-4 h-12 w-12 place-items-center rounded-full bg-gray-900 p-2.5 text-white shadow flex-shrink-0">
+        <div className="grid mb-4 h-10 w-10 place-items-center rounded-full bg-gray-900 p-2 text-white shadow flex-shrink-0">
           <Icon className="h-6 w-6" strokeWidth={2} />
         </div>
       </CardHeader>

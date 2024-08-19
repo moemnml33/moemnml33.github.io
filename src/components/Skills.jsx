@@ -7,6 +7,7 @@ import {
   EyeIcon,
   DevicePhoneMobileIcon,
   LightBulbIcon,
+  PuzzlePieceIcon,
 } from "@heroicons/react/24/solid";
 import { SkillCard } from "./SkillCard";
 import java from "../assets/tech-stack-icons/Java.png";
@@ -66,25 +67,18 @@ const SKILLS = [
     date: "Soft Skills",
   },
   {
-    icon: LightBulbIcon,
-    title: "Attention To Detail",
-    children:
-      "Committed to exceptional code quality, intuitive user interface design, and thorough testing to deliver flawless, user-friendly web applications. Continuously striving to innovate and optimize, ensuring every project exceeds expectations.",
-    date: "Soft Skills",
-  },
-  {
-    icon: LightBulbIcon,
-    title: "Creative Thinking",
-    children:
-      "Committed to exceptional code quality, intuitive user interface design, and thorough testing to deliver flawless, user-friendly web applications. Continuously striving to innovate and optimize, ensuring every project exceeds expectations.",
-    date: "Soft Skills",
-  },
-  {
     icon: RectangleGroupIcon,
     title: "Frontend Web Development",
     children:
       "Creating beautiful and functional web experiences is my forte. Using the latest technologies and best practices, I design and build experiences that captivate and engage users.",
     date: "Technical Skills",
+  },
+  {
+    icon: LightBulbIcon,
+    title: "Attention To Detail",
+    children:
+      "Committed to exceptional code quality, intuitive user interface design, and thorough testing to deliver flawless, user-friendly web applications. Continuously striving to innovate and optimize, ensuring every project exceeds expectations.",
+    date: "Soft Skills",
   },
   {
     icon: DevicePhoneMobileIcon,
@@ -94,36 +88,31 @@ const SKILLS = [
     date: "Technical Skills",
   },
   {
+    icon: PuzzlePieceIcon,
+    title: "Creative Thinking",
+    children:
+      "Committed to exceptional code quality, intuitive user interface design, and thorough testing to deliver flawless, user-friendly web applications. Continuously striving to innovate and optimize, ensuring every project exceeds expectations.",
+    date: "Soft Skills",
+  },
+  {
     icon: SwatchIcon,
     title: "Technology Stack",
     children: (
-      <div>
-        <div className="grid grid-cols-5 gap-y-1 gap-x-4 md:gap-x-1 lg:gap-x-4 xl:grid-cols-10 xl:gap-x-1 pb-1">
-          {TECH_ICONS_MAIN.map((element) => (
-            <img src={element} />
+      <span>
+        <span className="grid grid-cols-5 gap-y-1 gap-x-4 sm:gap-1 sm:grid-cols-10 md:grid-cols-5 lg:grid-cols-10 xl:grid-cols-10 xl:gap-x-1 pb-1">
+          {TECH_ICONS_MAIN.map((element, key) => (
+            <img src={element} key={key} />
           ))}
-        </div>
-        <div className="grid grid-cols-10 gap-1 md:grid-cols-5 lg:grid-cols-10">
-          {TECH_ICONS_SEC.map((element) => (
-            <img src={element} />
+        </span>
+        <span className="grid grid-cols-10 gap-1 md:grid-cols-10">
+          {TECH_ICONS_SEC.map((element, key) => (
+            <img src={element} key={key} />
           ))}
-        </div>
-      </div>
+        </span>
+      </span>
     ),
     date: "Technical Skills",
   },
-  //   {
-  //     icon: HashtagIcon,
-  //     title: " Web Optimization",
-  //     children:
-  //       "Performance matters. I optimize websites and apps for speed, ensuring the users enjoy a fast and responsive experience.",
-  //   },
-  //   {
-  //     icon: DocumentTextIcon,
-  //     title: "Testing and Quality Assurance",
-  //     children:
-  //       "I rigorously test and debug applications to guarantee a bug-free and secure environment for users. Peace of mind is as important to me as the functionality of the project.",
-  //   },
 ];
 
 export function Skills() {
@@ -135,7 +124,7 @@ export function Skills() {
       whileInView={{
         opacity: 1,
         y: 0,
-        transition: { delay: 0.1, duration: 0.8 },
+        transition: { delay: 0, duration: 0.7 },
       }}
       viewport={{ once: true, amount: 0.1 }}
     >
@@ -148,21 +137,21 @@ export function Skills() {
         </Typography>
         <Typography className="mx-auto w-full dark:text-zinc-400 lg:w-10/12">
           I&apos;m not just a developer; I&apos;m a{" "}
-          <Typography className="inline text-cyan-600 font-semibold">
+          <span className="inline text-cyan-600 font-semibold">
             curator of digital experiences
-          </Typography>
+          </span>
           . My passion lies in{" "}
-          <Typography className="inline text-cyan-600 font-semibold">
+          <span className="inline text-cyan-600 font-semibold">
             blending creativity with technology
-          </Typography>
+          </span>
           , whether I'm developing apps or DJing, to{" "}
-          <Typography className="inline text-cyan-600 font-semibold">
+          <span className="inline text-cyan-600 font-semibold">
             design and craft memorable experiences
-          </Typography>{" "}
+          </span>{" "}
           for my audience.
         </Typography>
       </div>
-      <div className="container mx-auto grid grid-cols-1 gap-x-8 gap-y-4 md:grid-cols-2 justify-between">
+      <div className="container grid grid-cols-1 gap-x-6 gap-y-4 mx-auto md:grid-cols-2 justify-between">
         {SKILLS.map((props, idx) => (
           <SkillCard key={idx} {...props} />
         ))}

@@ -14,11 +14,11 @@ export default function PhotoGallery() {
     <>
       <motion.div
         className="flex flex-row space-x-6 rounded-xl overflow-x-auto bg-trasparent justify-center absolute inset-x-0 py-2 pb-16 no-scrollbar"
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{
           opacity: 1,
           y: 0,
-          transition: { delay: 0.1, duration: 0.8 },
+          transition: { delay: 0, duration: 0.7 },
         }}
         viewport={{ once: true, amount: 0.1 }}
       >

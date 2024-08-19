@@ -41,84 +41,84 @@ export default function AboutCard() {
       whileInView={{
         opacity: 1,
         y: 0,
-        transition: { delay: 0.1, duration: 0.8 },
+        transition: { delay: 0, duration: 0.7 },
       }}
       viewport={{ once: true, amount: 0.1 }}
     >
-      <Card className="my-8 bg-zinc-900 shadow-transparent">
+      <Card className="my-8 bg-transparent shadow-transparent">
         <Avatar src={moebooka} alt="avatar" size="xl" />
         <CardBody className="p-0 pt-6">
           <Typography variant="h2" color="white" className="mb-2">
             Junior web and mobile developer, independent artist.
           </Typography>
-          <Typography className="text-slate-500 dark:text-zinc-400 ">
+          <Typography className="text-zinc-400">
             I'm Mohamad, a{" "}
-            <Typography className="inline text-cyan-600 font-semibold">
+            <span className="inline text-cyan-600 font-semibold">
               junior software developer
-            </Typography>{" "}
+            </span>{" "}
             from Montreal with up to one year of work experience as a software
             engineering research assistant, as well as an independent DJ, and
             currently a{" "}
-            <Typography className="inline text-cyan-600 font-semibold">
+            <span className="inline text-cyan-600 font-semibold">
               fourth-year computer science student
-            </Typography>{" "}
+            </span>{" "}
             at Concordia University. It all started with a simple Hello World...
           </Typography>
         </CardBody>
         <CardFooter className="px-0 pt-4 pb-8">
-          <div class="flex gap-4">
+          <div className="flex gap-4">
             <button
-              class="w-8 relative align-center text-xs text-zinc-400 hover:text-cyan-400 duration-300 ease-in-out"
+              className="w-8 relative align-center text-xs text-zinc-400 hover:text-cyan-400 duration-300 ease-in-out"
               type="button"
               onClick={handleGithub}
             >
               <span>
-                <i class="text-xl fab fa-github" aria-hidden="true"></i>
+                <i className="text-xl fab fa-github" aria-hidden="true"></i>
               </span>
             </button>
             <button
-              class="w-8 relative align-center text-xs text-zinc-400 hover:text-cyan-400 duration-300 ease-in-out"
+              className="w-8 relative align-center text-xs text-zinc-400 hover:text-cyan-400 duration-300 ease-in-out"
               type="button"
               onClick={handleLinkedin}
             >
               <span>
-                <i class="text-xl fab fa-linkedin" aria-hidden="true"></i>
+                <i className="text-xl fab fa-linkedin" aria-hidden="true"></i>
               </span>
             </button>
             <button
-              class="w-8 relative align-center text-xs text-zinc-400 hover:text-cyan-400 duration-300 ease-in-out"
+              className="w-8 relative align-center text-xs text-zinc-400 hover:text-cyan-400 duration-300 ease-in-out"
               type="button"
               onClick={handleInstagram}
             >
               <span>
-                <i class="text-xl fab fa-instagram" aria-hidden="true"></i>
+                <i className="text-xl fab fa-instagram" aria-hidden="true"></i>
               </span>
             </button>
             <button
-              class="w-8 relative align-center text-xs text-zinc-400 hover:text-cyan-400 duration-300 ease-in-out"
+              className="w-8 relative align-center text-xs text-zinc-400 hover:text-cyan-400 duration-300 ease-in-out"
               type="button"
               onClick={handleSoundcloud}
             >
               <span>
-                <i class="text-xl fab fa-soundcloud" aria-hidden="true"></i>
+                <i className="text-xl fab fa-soundcloud" aria-hidden="true"></i>
               </span>
             </button>
             <button
-              class="w-8 relative align-center text-xs text-zinc-400 hover:text-cyan-400 duration-300 ease-in-out"
+              className="w-8 relative align-center text-xs text-zinc-400 hover:text-cyan-400 duration-300 ease-in-out"
               type="button"
               onClick={handleTwitch}
             >
               <span>
-                <i class="text-xl fab fa-twitch" aria-hidden="true"></i>
+                <i className="text-xl fab fa-twitch" aria-hidden="true"></i>
               </span>
             </button>
             <button
-              class="w-8 relative align-center text-xs text-zinc-400 hover:text-cyan-400 duration-300 ease-in-out"
+              className="w-8 relative align-center text-xs text-zinc-400 hover:text-cyan-400 duration-300 ease-in-out"
               type="button"
               onClick={handleDiscord}
             >
               <span>
-                <i class="text-xl fab fa-discord" aria-hidden="true"></i>
+                <i className="text-xl fab fa-discord" aria-hidden="true"></i>
               </span>
             </button>
           </div>

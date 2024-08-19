@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       {/* <div className="container flex-col justify-center sm:w-11/12 bg-zinc-900 sm:border-x sm:border-zinc-700"> */}
-      <div className="container flex-col justify-center bg-zinc-900 min-w-full lg:px-10">
+      <div className="container flex-col justify-center bg-zinc-900 min-w-full lg:px-20">
         <SimpleNavbar />
         <AboutCard />
         <PhotoGallery />

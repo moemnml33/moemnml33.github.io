@@ -19,7 +19,7 @@ export default function SimpleNavbar() {
   }, []);
 
   return (
-    <Navbar className="backdrop-filter backdrop-blur-md fixed top-0 inset-x-0 z-10 h-max max-w-full border-none rounded-none px-4 py-2 lg:px-8 lg:py-4 bg-black flex justify-evenly">
+    <Navbar className="backdrop-filter backdrop-blur-md fixed top-0 inset-x-0 z-10 h-max max-w-full border-none rounded-none py-3 lg:px-8 lg:py-4 bg-black flex justify-evenly">
       <div className="text-slate-500 dark:text-zinc-400">
         {LINKS.map((item, index) => (
           <a

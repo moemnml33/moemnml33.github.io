@@ -1,5 +1,3 @@
-"use client";
-
 import { Typography } from "@material-tailwind/react";
 import {
   RectangleGroupIcon,
@@ -118,7 +116,7 @@ const SKILLS = [
 export function Skills() {
   return (
     <motion.section
-      className="px-2 mb-10 xl:mx-15 pt-14"
+      className="mb-6 xl:mx-15 pt-14"
       id="skills"
       initial={{ opacity: 0 }}
       whileInView={{
@@ -150,7 +148,7 @@ export function Skills() {
           for my audience.
         </Typography>
       </div>
-      <div className="container grid grid-cols-1 gap-x-6 gap-y-4 mx-auto lg:grid-cols-2 justify-between">
+      <div className="container grid grid-cols-1 gap-x-20 gap-y-4 mx-auto xl:grid-cols-2 justify-between">
         {SKILLS.map((props, idx) => (
           <SkillCard key={idx} {...props} />
         ))}

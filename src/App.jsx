@@ -2,7 +2,7 @@ import "./App.css";
 import SimpleNavbar from "./components/Navbar";
 import AboutCard from "./components/AboutCard";
 import PhotoGallery from "./components/PhotoGallery";
-import Skills from "./components/Skills";
+import InformationSection from "./components/InformationSection";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <SimpleNavbar />
         <AboutCard />
         <PhotoGallery />
-        <Skills />
+        <InformationSection />
       </div>
     </>
   );

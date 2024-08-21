@@ -12,7 +12,7 @@ export default function PhotoGallery() {
   };
   return (
     <>
-      <motion.div
+      <motion.section
         className="flex flex-row space-x-6 rounded-xl overflow-x-auto bg-trasparent justify-center absolute inset-x-0 py-2 pb-16 no-scrollbar"
         initial={{ opacity: 0 }}
         whileInView={{
@@ -57,7 +57,7 @@ export default function PhotoGallery() {
             alt="moebooka"
           />
         </Tilt>
-      </motion.div>
+      </motion.section>
       <div className="h-64 md:h-80"></div>
     </>
   );

@@ -4,9 +4,9 @@ import { Navbar, Typography } from "@material-tailwind/react";
 // const LINKS = ["About", "Experience", "Education", "Uses"];
 const LINKS = [
   { title: "About", link: "#about" },
+  { title: "Education", link: "#education" },
+  { title: "Experience", link: "#experience" },
   { title: "Skills", link: "#skills" },
-  { title: "Education", link: "#" },
-  { title: "Experience", link: "#" },
   { title: "Projects", link: "#" },
 ];
 

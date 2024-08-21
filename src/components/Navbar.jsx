@@ -5,9 +5,9 @@ import { Navbar, Typography } from "@material-tailwind/react";
 const LINKS = [
   { title: "About", link: "#about" },
   { title: "Skills", link: "#skills" },
+  { title: "Education", link: "#" },
   { title: "Experience", link: "#" },
   { title: "Projects", link: "#" },
-  { title: "Education", link: "#" },
 ];
 
 export default function SimpleNavbar() {
@@ -19,13 +19,13 @@ export default function SimpleNavbar() {
   }, []);
 
   return (
-    <Navbar className="backdrop-filter backdrop-blur-md fixed top-0 inset-x-0 z-10 h-max max-w-full border-none rounded-none py-3 lg:px-8 lg:py-4 bg-black flex justify-evenly">
+    <Navbar className="fixed backdrop-filter backdrop-blur-md top-0 inset-x-0 z-10 h-max max-w-full border-none rounded-none py-3 bg-black flex justify-around">
       <div className="text-slate-500 dark:text-zinc-400">
         {LINKS.map((item, index) => (
           <a
             key={index}
             href={item.link}
-            className="mx-3 md:mx-4 cursor-pointer py-1.5 text-sm font-light hover:text-cyan-400 duration-300 ease-in-out text-zinc-400"
+            className="px-2 md:px-4 cursor-pointer py-1.5 text-sm font-light hover:text-cyan-400 duration-300 ease-in-out text-zinc-400"
           >
             {item.title}
           </a>

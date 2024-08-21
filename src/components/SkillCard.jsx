@@ -25,8 +25,8 @@ export function SkillCard({ icon: Icon, title, children, date }) {
 
   return (
     <motion.div
-      className="bg-zinc-800 rounded-3xl p-1 max-w-xl justify-self-center shadow-md shadow-zinc-950/80"
-      initial={{ opacity: 0, y: 50 }}
+      className="bg-zinc-800 rounded-3xl p-1 max-w-2xl justify-self-center shadow-md shadow-zinc-950/80"
+      initial={{ opacity: 0, y: 20 }}
       whileInView={{
         opacity: 1,
         y: 0,

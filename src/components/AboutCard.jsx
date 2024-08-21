@@ -34,18 +34,19 @@ export default function AboutCard() {
   };
 
   return (
-    <motion.div
-      className="container flex flex-col gap py-2 px-10 max-w-[900px] my-12"
+    <div
+      className="container flex flex-col sm:px-8 pt-12 sm:pb-4 md:pb-8 lg:mx-12 max-w-[850px]"
       id="about"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{
-        opacity: 1,
-        y: 0,
-        transition: { delay: 0, duration: 0.7 },
-      }}
-      viewport={{ once: true, amount: 0.1 }}
     >
-      <Card className="my-8 bg-transparent shadow-transparent">
+      <motion.Card
+        className="my-8 bg-transparent shadow-transparent"
+        initial={{ opacity: 0 }}
+        whileInView={{
+          opacity: 1,
+          transition: { delay: 0, duration: 2 },
+        }}
+        viewport={{ once: true, amount: 0.1 }}
+      >
         <Avatar src={moebooka} alt="avatar" size="xl" />
         <CardBody className="p-0 pt-6">
           <Typography variant="h2" color="white" className="mb-2">
@@ -123,7 +124,7 @@ export default function AboutCard() {
             </button>
           </div>
         </CardFooter>
-      </Card>
-    </motion.div>
+      </motion.Card>
+    </div>
   );
 }

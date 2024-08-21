@@ -99,7 +99,7 @@ const SKILLS = [
     title: "Technology Stack",
     children: (
       <span>
-        <span className="grid grid-cols-5 gap-y-1 gap-x-4 sm:gap-1 sm:grid-cols-10 md:grid-cols-5 lg:grid-cols-10 xl:grid-cols-10 xl:gap-x-1 pb-1">
+        <span className="grid grid-cols-5 gap-y-1 gap-x-4 sm:gap-1 sm:grid-cols-10 md:grid-cols-10 xl:grid-cols-10 xl:gap-x-1 pb-1">
           {TECH_ICONS_MAIN.map((element, key) => (
             <img src={element} key={key} />
           ))}
@@ -118,15 +118,14 @@ const SKILLS = [
 export function Skills() {
   return (
     <motion.section
-      className="px-8 mb-10"
+      className="px-2 mb-10 xl:mx-15 pt-14"
       id="skills"
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: 0 }}
       whileInView={{
         opacity: 1,
-        y: 0,
         transition: { delay: 0, duration: 0.7 },
       }}
-      viewport={{ once: true, amount: 0.1 }}
+      viewport={{ once: true, amount: 0.05 }}
     >
       <div className="container mx-auto mb-10 text-center">
         <Typography color="white" className="mb-2 font-bold uppercase">
@@ -151,7 +150,7 @@ export function Skills() {
           for my audience.
         </Typography>
       </div>
-      <div className="container grid grid-cols-1 gap-x-6 gap-y-4 mx-auto md:grid-cols-2 justify-between">
+      <div className="container grid grid-cols-1 gap-x-6 gap-y-4 mx-auto lg:grid-cols-2 justify-between">
         {SKILLS.map((props, idx) => (
           <SkillCard key={idx} {...props} />
         ))}

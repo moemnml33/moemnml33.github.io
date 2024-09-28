@@ -55,19 +55,26 @@ export default function Experience() {
           Work & Experience
         </Typography>
         <Typography variant="h2" color="white" className="mb-4">
-          Eager to learn
+          Creative Technologist
         </Typography>
         <Typography className="mx-auto w-full dark:text-zinc-400 lg:w-10/12">
-          Driven by a passion for continuous growth, each milestone in my
-          academic and professional training has equipped me with the skills
-          needed to{" "}
+          I'm not just a developer; I'm a{" "}
           <span className="inline text-cyan-600 font-semibold">
-            innovate and excel in creating impactful digital solutions
+            well-rounded professional with a creative edge
           </span>
-          . From mastering core programming languages to earning specialized
-          certifications, my educational background reflects my{" "}
+          . My year as a{" "}
           <span className="inline text-cyan-600 font-semibold">
-            commitment to staying at the forefront of technology
+            Software Engineering Research Assistant
+          </span>
+          , along with experience as an assistant manager, tech salesperson, and
+          DJ, has sharpened my{" "}
+          <span className="inline text-cyan-600 font-semibold">
+            technical, leadership, and creative skills
+          </span>
+          . This diverse background prepares me to tackle challenges from
+          multiple angles and{" "}
+          <span className="inline text-cyan-600 font-semibold">
+            craft innovative solutions
           </span>
           .
         </Typography>

@@ -1,34 +1,34 @@
-import { Typography } from "@material-tailwind/react";
 import {
-  RectangleGroupIcon,
-  SwatchIcon,
-  EyeIcon,
   DevicePhoneMobileIcon,
+  EyeIcon,
   LightBulbIcon,
   PuzzlePieceIcon,
+  RectangleGroupIcon,
+  SwatchIcon,
 } from "@heroicons/react/24/solid";
-import { SkillCard } from "./SkillCard";
-import java from "../assets/tech-stack-icons/Java.png";
-import python from "../assets/tech-stack-icons/Python.png";
-import react from "../assets/tech-stack-icons/React.png";
-import html from "../assets/tech-stack-icons/HTML.png";
+import { Typography } from "@material-tailwind/react";
+import { motion } from "framer-motion";
+import ableton from "../assets/tech-stack-icons/Ableton.png";
+import androidstudio from "../assets/tech-stack-icons/AndroidStudio.png";
 import css from "../assets/tech-stack-icons/CSS.png";
-import js from "../assets/tech-stack-icons/JavaScript.png";
-import tailwind from "../assets/tech-stack-icons/TailwindCSS.png";
-import vite from "../assets/tech-stack-icons/Vite.png";
+import eclipse from "../assets/tech-stack-icons/Eclipse.png";
 import figma from "../assets/tech-stack-icons/Figma.png";
 import github from "../assets/tech-stack-icons/Github.png";
+import html from "../assets/tech-stack-icons/HTML.png";
+import java from "../assets/tech-stack-icons/Java.png";
+import js from "../assets/tech-stack-icons/JavaScript.png";
+import mysql from "../assets/tech-stack-icons/MySQL.png";
 import nodejs from "../assets/tech-stack-icons/NodeJS.png";
 import npm from "../assets/tech-stack-icons/Npm.png";
 import php from "../assets/tech-stack-icons/PHP.png";
-import mysql from "../assets/tech-stack-icons/MySQL.png";
-import sqlite from "../assets/tech-stack-icons/SQLite.png";
-import vscode from "../assets/tech-stack-icons/VSCode.png";
-import eclipse from "../assets/tech-stack-icons/Eclipse.png";
-import androidstudio from "../assets/tech-stack-icons/AndroidStudio.png";
+import python from "../assets/tech-stack-icons/Python.png";
 import qt from "../assets/tech-stack-icons/QT.png";
-import ableton from "../assets/tech-stack-icons/Ableton.png";
-import { motion } from "framer-motion";
+import react from "../assets/tech-stack-icons/React.png";
+import sqlite from "../assets/tech-stack-icons/SQLite.png";
+import tailwind from "../assets/tech-stack-icons/TailwindCSS.png";
+import vite from "../assets/tech-stack-icons/Vite.png";
+import vscode from "../assets/tech-stack-icons/VSCode.png";
+import { SkillCard } from "./SkillCard";
 
 const TECH_ICONS_MAIN = [
   java,
@@ -116,7 +116,7 @@ const SKILLS = [
 export function Skills() {
   return (
     <motion.section
-      className="mb-6 xl:mx-15 pt-14"
+      className="mb-6 xl:mx-15 pt-6"
       id="skills"
       initial={{ opacity: 0 }}
       whileInView={{

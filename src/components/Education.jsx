@@ -1,7 +1,7 @@
-import React from "react";
+import { AcademicCapIcon } from "@heroicons/react/24/solid";
 import { Typography } from "@material-tailwind/react";
-import { AcademicCapIcon, FireIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
+import React from "react";
 import SkillCard from "./SkillCard";
 
 const EDUCATION = [
@@ -9,39 +9,33 @@ const EDUCATION = [
     icon: AcademicCapIcon,
     title:
       "Bachelor's in Computer Science CO-OP - Concordia University, Montreal",
-    children: `Relevant Courses: Web-Based Enterprise Application Design, Web Services & Applications, User Interface Design, 
-    Artifical Intelligence, Machine Learning, Data Structures & Algorithms, Database Management, Object Oriented Programming, 
-    System Hardware, Web Programming, Operating Systems, Software Engineering.`,
+    children: `Relevant Courses: Web-Based Enterprise Application Design, Web Services & Applications, User Interface Design,
+      Artifical Intelligence, Machine Learning, Data Structures & Algorithms, Database Management, Object Oriented Programming,
+      System Hardware, Web Programming, Operating Systems, Software Engineering.`,
     date: "2020-2025 (Expected)",
   },
   {
     icon: AcademicCapIcon,
-    title: "Certified Web Developer - Web Development Institute",
-    children:
-      "This comprehensive program covered HTML5, CSS3, JavaScript, responsive design, server-side scripting, and web security.",
-    date: "2016",
+    title: "SQLite Databases for Python Programming - Udemy",
+    children: `This comprehensive course covered the use of SQLite with Python. It covered database creation,
+        table management, data manipulation, and query building. Built a basic app to apply skills, including inserting, 
+        updating, sorting, and deleting records using SQLite.`,
+    date: "2024",
   },
   {
     icon: AcademicCapIcon,
     title: "Excel Training Program - Concordia University",
-    children: `The Excel Training Program is a voluntary series of microlearning concept videos and assessments, to enhance my excel 
-      skills and readiness. Covers, Excel basics, data wrangling and date time handling, LOOKUP functions and charts, array 
-      formulae and data analysis.`,
+    children: `The Excel Training Program is a voluntary series of microlearning concept videos and assessments, to enhance my excel
+        skills and readiness. Covers, Excel basics, data wrangling and date time handling, LOOKUP functions and charts, array
+        formulae and data analysis.`,
     date: "2023",
-  },
-  {
-    icon: AcademicCapIcon,
-    title: "JavaScript Developer Certification - Code Academy",
-    children:
-      "This certification demonstrates advanced proficiency in JavaScript programming, including ES6 features and practical applications.",
-    date: "2014",
   },
 ];
 
 export default function Education() {
   return (
     <motion.section
-      className="mb-4 xl:mx-15 pt-14"
+      className="mb-4 xl:mx-15 pt-6"
       id="education"
       initial={{ opacity: 0 }}
       whileInView={{

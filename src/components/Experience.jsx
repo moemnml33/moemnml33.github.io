@@ -1,7 +1,7 @@
-import React from "react";
-import { Typography } from "@material-tailwind/react";
 import { BriefcaseIcon } from "@heroicons/react/24/solid";
+import { Typography } from "@material-tailwind/react";
 import { motion } from "framer-motion";
+import React from "react";
 import SkillCard from "./SkillCard";
 
 const EXPERIENCE = [
@@ -41,7 +41,7 @@ const EXPERIENCE = [
 export default function Experience() {
   return (
     <motion.section
-      className="mb-4 xl:mx-15 pt-14"
+      className="mb-4 xl:mx-15 pt-6"
       id="experience"
       initial={{ opacity: 0 }}
       whileInView={{

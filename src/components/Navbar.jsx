@@ -1,5 +1,5 @@
+import { Navbar } from "@material-tailwind/react";
 import React from "react";
-import { Navbar, Typography } from "@material-tailwind/react";
 
 // const LINKS = ["About", "Experience", "Education", "Uses"];
 const LINKS = [
@@ -12,10 +12,7 @@ const LINKS = [
 
 export default function SimpleNavbar() {
   React.useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setIsNavOpen(false)
-    );
+    window.addEventListener("resize", () => window.innerWidth >= 960);
   }, []);
 
   return (

@@ -1,10 +1,10 @@
-import moebooka from "../assets/moebooka.JPEG";
-import deeper from "../assets/deeper.JPG";
+import { motion } from "framer-motion";
+import Tilt from "react-parallax-tilt";
 import cratediggers from "../assets/cratediggers.anon.png";
+import deeper from "../assets/deeper.JPG";
 import dj808 from "../assets/dj-808.JPG";
 import helloworld from "../assets/hello-world.png";
-import Tilt from "react-parallax-tilt";
-import { motion } from "framer-motion";
+import moebooka from "../assets/moebooka.JPEG";
 
 export default function PhotoGallery() {
   const handleCratedigger = () => {
@@ -58,7 +58,7 @@ export default function PhotoGallery() {
           />
         </Tilt>
       </motion.section>
-      <div className="h-64 md:h-80"></div>
+      <div className="h-72 md:h-96"></div>
     </>
   );
 }

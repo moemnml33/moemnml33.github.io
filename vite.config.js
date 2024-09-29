@@ -5,5 +5,4 @@ import { defineConfig } from "vite";
 export default defineConfig({
   plugins: [react()],
   assetsInclude: ["**/*.JPEG", "**/*.JPG"],
-  base: "/moemnml33.github.io/",
 });

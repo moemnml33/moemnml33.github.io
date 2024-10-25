@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
+import coding from "../assets/coding.png";
 import cratediggers from "../assets/cratediggers.anon.png";
 import deeper from "../assets/deeper.JPG";
 import dj808 from "../assets/dj-808.JPG";
@@ -23,9 +24,16 @@ export default function PhotoGallery() {
       >
         <Tilt className="flex-shrink-0" tiltReverse={true}>
           <img
-            className="object-cover object-center rounded-xl shadow-lg w-56 h-56 shadow-blue-gray-900/50 transform -rotate-2 md:h-72 md:w-72"
+            className="object-cover object-center rounded-xl shadow-lg w-56 h-56 shadow-blue-gray-900/50 transform rotate-2 md:h-72 md:w-72"
             src={helloworld}
             alt="helloworld"
+          />
+        </Tilt>
+        <Tilt className="flex-shrink-0" tiltReverse={true}>
+          <img
+            className="object-cover object-center rounded-xl shadow-lg w-56 h-56 shadow-blue-gray-900/50 transform -rotate-2 md:h-72 md:w-72"
+            src={deeper}
+            alt="deeper"
           />
         </Tilt>
         <Tilt className="flex-shrink-0" tiltReverse={true}>
@@ -38,8 +46,8 @@ export default function PhotoGallery() {
         <Tilt className="flex-shrink-0" tiltReverse={true}>
           <img
             className="object-cover object-center rounded-xl shadow-lg w-56 h-56 shadow-blue-gray-900/50 transform -rotate-2 md:h-72 md:w-72"
-            src={deeper}
-            alt="deeper"
+            src={coding}
+            alt="coding"
           />
         </Tilt>
         <Tilt className="flex-shrink-0" tiltReverse={true}>

@@ -148,10 +148,19 @@ export function Skills() {
           for my audience.
         </Typography>
       </div>
-      <div className="container grid grid-cols-1 gap-x-20 gap-y-4 mx-auto xl:grid-cols-2 justify-between">
-        {SKILLS.map((props, idx) => (
-          <SkillCard key={idx} {...props} />
-        ))}
+      <div className="container flex flex-col gap-y-4 mx-auto xl:flex-row md:gap-x-20">
+        {/* Soft skills */}
+        <div className="flex flex-col gap-y-4 items-center">
+          {SKILLS.filter((_, idx) => idx % 2 === 0).map((props, idx) => (
+            <SkillCard key={idx} {...props} />
+          ))}
+        </div>
+        {/* Technical skills */}
+        <div className="flex flex-col gap-y-4 items-center">
+          {SKILLS.filter((_, idx) => idx % 2 !== 0).map((props, idx) => (
+            <SkillCard key={idx} {...props} />
+          ))}
+        </div>
       </div>
     </motion.section>
   );

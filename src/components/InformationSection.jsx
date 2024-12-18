@@ -1,7 +1,7 @@
 import React from "react";
-import Skills from "./Skills";
 import Education from "./Education";
 import Experience from "./Experience";
+import Skills from "./Skills";
 
 export default function InformationSection() {
   return (

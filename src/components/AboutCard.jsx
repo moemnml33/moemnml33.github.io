@@ -48,7 +48,7 @@ export default function AboutCard() {
           <Typography variant="h2" color="white" className="mb-2">
             Junior web and mobile developer, independent artist.
           </Typography>
-          <Typography className="text-textBackground">
+          <Typography className="text-zinc-400">
             I'm Mohamad, a{" "}
             <span className="inline text-cyan-600 font-semibold">
               junior software developer

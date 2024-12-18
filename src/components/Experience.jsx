@@ -8,33 +8,47 @@ const EXPERIENCE = [
   {
     icon: BriefcaseIcon,
     title:
-      "Bachelor's in Computer Science CO-OP - Concordia University, Montreal",
-    children: `Relevant Courses: Web-Based Enterprise Application Design, Web Services & Applications, User Interface Design, 
-    Artifical Intelligence, Machine Learning, Data Structures & Algorithms, Database Management, Object Oriented Programming, 
-    System Hardware, Web Programming, Operating Systems, Software Engineering.`,
-    date: "2020-2025 (Expected)",
+      "Machine Learning/Computer Vision Intern - Health System R&D, Surrey, BC (Remote)",
+    children: `Developed mobile apps for iOS and Android simulators, resolving platform-specific backend issues.
+    Integrated spine prediction and pain score estimation models, while debugging video processing and data-handling
+    issues. Improved predictive modelling accuracy with Artificial Neural Networks (ANNs). Enhanced model stability and
+    performance with iterative data imputation, cross-validation, and PCA. Streamlined app usability and created
+    comprehensive setup guides and troubleshooting documentation.`,
+    date: "September 2024 - December 2024",
   },
   {
     icon: BriefcaseIcon,
-    title: "Certified Web Developer - Web Development Institute",
-    children:
-      "This comprehensive program covered HTML5, CSS3, JavaScript, responsive design, server-side scripting, and web security.",
-    date: "2016",
+    title:
+      "Full-stack Web/Mobile Dev Intern - Health System R&D, Surrey, BC (Remote)",
+    children: `Full-stack React frontend with calendar-based date selection for data fetching and display, and Express.js
+    backend with API endpoints for retrieving and aggregating data from SQLite3 database. Enhanced React Native app usability 
+    with intuitive navigation, live camera feed processing, video upload, front/back camera toggling, and LineChart for pain-related data 
+    visualization. Improved codebase with reusable components, resolved dependency errors, and redesigned interface.`,
+    date: "May 2024 - Aug 2025",
   },
   {
     icon: BriefcaseIcon,
-    title: "Excel Training Program - Concordia University",
-    children: `The Excel Training Program is a voluntary series of microlearning concept videos and assessments, to enhance my excel 
-      skills and readiness. Covers, Excel basics, data wrangling and date time handling, LOOKUP functions and charts, array 
-      formulae and data analysis.`,
-    date: "2023",
+    title: "Python Game Dev Intern - Health System R&D, Surrey, BC (Remote)",
+    children: `Designed and developed interactive applications and games in Python, integrating with a Brain-Computer Interface
+    (BCI) model to control apps using brain signals. Ensured seamless synchronization between the BCI and applications for smooth
+    interaction. Created a clean, user-friendly GUI with an intuitive layout, visual appeal, and engaging sound effects to enhance user experience.`,
+    date: "June 2023 - Sept 2023",
   },
   {
     icon: BriefcaseIcon,
-    title: "JavaScript Developer Certification - Code Academy",
-    children:
-      "This certification demonstrates advanced proficiency in JavaScript programming, including ES6 features and practical applications.",
-    date: "2014",
+    title: "Technology Sales - Bureau En Gros/Staples, Montreal, QC",
+    children: `Analyzed client needs and provided personalized solutions using in-depth knowledge of technology products and services.
+    Provided technical support, troubleshooting, and warranty-related inquiries for various devices. Maintained an organized stock system
+    for efficient operations and streamlined customer service.`,
+    date: "Aug 2021 - Aug 2022",
+  },
+  {
+    icon: BriefcaseIcon,
+    title: "Assistant Manager - Tim Horton's, Montreal, QC",
+    children: `Fostered a team environment to drive sales and revenue by building strong relationships. Strategically allocated 
+      tasks based on strengths and goals to maximize efficiency. Interviewed new hires, provided coaching, training, and customer 
+      service guidance. Thrived in high-pressure environments with an organized workflow.`,
+    date: "Jan 2016 - Aug 2021",
   },
 ];
 

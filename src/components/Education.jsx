@@ -16,12 +16,44 @@ const EDUCATION = [
   },
   {
     icon: AcademicCapIcon,
-    title: "SQLite Databases for Python Programming - Udemy",
-    children: `This comprehensive course covered the use of SQLite with Python. It covered database creation,
-        table management, data manipulation, and query building. Built a basic app to apply skills, including inserting, 
-        updating, sorting, and deleting records using SQLite.`,
-    date: "2024",
+    title: "The Complete 2024 Web Development Bootcamp - Udemy",
+    children: `This comprehensive course covered front-end and back-end web development, including HTML5, CSS3, Flexbox,
+    Grid, Bootstrap 5, JavaScript ES6, DOM manipulation, and React.js with Hooks. Backend topics included Node.js,
+    Express.js, REST APIs, SQL, PostgreSQL, and authentication. The course also introduced Git, GitHub,
+    version control, and deployment with GitHub Pages. Additionally, explored Web3 technologies such as blockchain,
+    token contract development, and NFT minting and trading logic, providing a solid foundation for modern web development.`,
+    date: "2024 - current",
   },
+  {
+    icon: AcademicCapIcon,
+    title: "Build mobile apps with React Native: From ZERO to EXPERT - Udemy",
+    children: `This 10-hour course provided a comprehensive guide to building cross-platform mobile apps with React Native,
+    covering essential and advanced topics. It included creating functional and class components, using React Context and
+    Hooks, integrating REST APIs, and implementing features such as tab navigation, user authentication (email and Google),
+    image uploads, and swipeable image carousels. The course also explored app navigation with bottom tabs and stack
+    navigation, making external calls and links, and formatting code with ESLint. Designed to equip learners with the
+    skills to build enterprise-grade mobile apps for both iOS and Android.`,
+    date: "2024 - current",
+  },
+  {
+    icon: AcademicCapIcon,
+    title: "React - The Complete Guide 2024 (incl. Next.js, Redux) - Udemy",
+    children: `This course provided an in-depth introduction to React.js and Next.js, covering core
+    concepts such as components, props, state management, and dynamic data binding. Topics included React Hooks,
+    debugging React apps, styling with Styled Components and CSS Modules, handling forms, HTTP requests, and implementing
+    authentication. Explored advanced concepts like Redux Toolkit, React Router, React Server Components, and combining
+    React with TypeScript. Additionally, the course covered deploying React apps, adding animations, unit testing,
+    and building real-world demo projects to solidify understanding.`,
+    date: "2024 - current",
+  },
+  // {
+  //   icon: AcademicCapIcon,
+  //   title: "SQLite Databases for Python Programming - Udemy",
+  //   children: `This course covered the use of SQLite with Python. It covered database creation,
+  //       table management, data manipulation, and query building. Built a basic app to apply skills, including inserting,
+  //       updating, sorting, and deleting records using SQLite.`,
+  //   date: "2024",
+  // },
   {
     icon: AcademicCapIcon,
     title: "Excel Training Program - Concordia University",

@@ -9,7 +9,7 @@ const bg_color_white = "bg-white";
 // const styling = `${bg_color_dark} container flex-col justify-center min-w-full px-5`;
 
 function App() {
-  const { theme, setTheme } = useTheme("dark");
+  const { theme, setTheme } = useTheme();
   const handleTheme = () => {
     if (theme === "dark") {
       setTheme("light");

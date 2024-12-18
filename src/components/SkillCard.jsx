@@ -20,7 +20,7 @@ export function SkillCard({ icon: Icon, title, children, date }) {
 
   return (
     <motion.div
-      className="bg-cardBackground rounded-3xl p-1 max-w-2xl justify-self-center shadow-md shadow-zinc-950/80"
+      className="bg-cardBackground rounded-3xl p-1 max-w-2xl justify-self-center shadow-md shadow-zinc-950/80 py-2"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{
         opacity: 1,
@@ -35,10 +35,10 @@ export function SkillCard({ icon: Icon, title, children, date }) {
         shadow={false}
       >
         <div className="flex flex-col gap-1 w-full pr-12">
-          <Typography color="light-blue" className="font-medium text-xs pt-1">
+          <Typography color="light-blue" className="font-medium text-xs">
             {date}
           </Typography>
-          <Typography variant="h5" color="white" className="w-full">
+          <Typography variant="h5" color="white" className="w-full mb-1">
             {title}
           </Typography>
         </div>
@@ -46,7 +46,7 @@ export function SkillCard({ icon: Icon, title, children, date }) {
           <Icon className="h-6 w-6" strokeWidth={2} />
         </div>
       </CardHeader>
-      <CardBody className="grid justify-start px-4 pt-2 pb-5">
+      <CardBody className="grid justify-start px-4 pt-1 pb-2 mb-1 max-h-32 overflow-y-auto">
         <Typography className="!text-zinc-400 text-md">{children}</Typography>
       </CardBody>
     </motion.div>

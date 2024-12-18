@@ -73,7 +73,7 @@ export default withMT({
         },
         dark: {
           colors: {
-            background: "#09090b",
+            background: "#18181b",
             cardBackground: "#27272a",
             textBackground: "#a1a1aa",
           },

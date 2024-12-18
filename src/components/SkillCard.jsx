@@ -20,7 +20,7 @@ export function SkillCard({ icon: Icon, title, children, date }) {
 
   return (
     <motion.div
-      className="bg-zinc-800 rounded-3xl p-1 max-w-2xl justify-self-center shadow-md shadow-zinc-950/80"
+      className="bg-cardBackground rounded-3xl p-1 max-w-2xl justify-self-center shadow-md shadow-zinc-950/80"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{
         opacity: 1,
@@ -30,7 +30,7 @@ export function SkillCard({ icon: Icon, title, children, date }) {
       viewport={{ once: true, amount: 0.1 }}
     >
       <CardHeader
-        className="flex items-center justify-between rounded-3xl overflow-visible bg-zinc-800 mt-1 mr-1 relative"
+        className="bg-cardBackground flex items-center justify-between rounded-3xl overflow-visible mt-1 mr-1 relative"
         floated={false}
         shadow={false}
       >

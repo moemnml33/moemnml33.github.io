@@ -1,14 +1,12 @@
 import {
   Avatar,
-  Typography,
   Card,
   CardBody,
   CardFooter,
-  Button,
-  IconButton,
+  Typography,
 } from "@material-tailwind/react";
-import moebooka from "../assets/moebooka.JPEG";
 import { motion } from "framer-motion";
+import moebooka from "../assets/moebooka.JPEG";
 
 export default function AboutCard() {
   const handleGithub = () => {
@@ -50,7 +48,7 @@ export default function AboutCard() {
           <Typography variant="h2" color="white" className="mb-2">
             Junior web and mobile developer, independent artist.
           </Typography>
-          <Typography className="text-zinc-400">
+          <Typography className="text-textBackground">
             I'm Mohamad, a{" "}
             <span className="inline text-cyan-600 font-semibold">
               junior software developer

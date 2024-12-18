@@ -1,7 +1,12 @@
 import withMT from "@material-tailwind/react/utils/withMT";
+const { nextui } = require("@nextui-org/react");
 
 export default withMT({
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -24,7 +29,6 @@ export default withMT({
         ],
       },
     },
-    darkMode: "selector",
     colors: {
       slate: {
         50: "#f8fafc",
@@ -56,5 +60,25 @@ export default withMT({
       DEFAULT: "1px",
     },
   },
-  plugins: [],
+  darkMode: "class",
+  plugins: [
+    nextui({
+      themes: {
+        light: {
+          colors: {
+            background: "#f1f5f9",
+            cardBackground: "#f8fafc",
+            textBackground: "#0f172a",
+          },
+        },
+        dark: {
+          colors: {
+            background: "#09090b",
+            cardBackground: "#27272a",
+            textBackground: "#a1a1aa",
+          },
+        },
+      },
+    }),
+  ],
 });

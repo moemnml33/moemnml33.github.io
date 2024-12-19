@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
-import coding from "../assets/coding.png";
-import cratediggers from "../assets/cratediggers.anon.png";
-import deeper from "../assets/deeper.JPG";
-import dj808 from "../assets/dj-808.JPG";
-import helloworld from "../assets/hello-world.png";
-import moebooka from "../assets/moebooka.JPEG";
+import coding from "../assets/gallery/coding.png";
+import cratediggers from "../assets/gallery/cratediggers.anon.png";
+import deeper from "../assets/gallery/deeper.JPG";
+import dj808 from "../assets/gallery/dj-808.JPG";
+import helloworld from "../assets/gallery/hello-world.png";
+import moebooka from "../assets/gallery/moebooka.JPEG";
 
 export default function PhotoGallery() {
   const handleCratedigger = () => {

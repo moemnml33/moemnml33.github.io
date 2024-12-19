@@ -6,7 +6,7 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import { motion } from "framer-motion";
-import moebooka from "../assets/moebooka.JPEG";
+import moebooka from "../assets/gallery/moebooka.JPEG";
 
 export default function AboutCard() {
   const handleGithub = () => {

@@ -1,12 +1,13 @@
-import { AcademicCapIcon } from "@heroicons/react/24/solid";
 import { Typography } from "@material-tailwind/react";
 import { motion } from "framer-motion";
 import React from "react";
+import concordia from "../assets/institutions-logos/concordia.png";
+import udemy from "../assets/institutions-logos/udemy.png";
 import SkillCard from "./SkillCard";
 
 const EDUCATION = [
   {
-    icon: AcademicCapIcon,
+    icon: concordia,
     title:
       "Bachelor's in Computer Science CO-OP - Concordia University, Montreal",
     children: `Relevant Courses: Web-Based Enterprise Application Design, Web Services & Applications, User Interface Design,
@@ -15,7 +16,7 @@ const EDUCATION = [
     date: "2020-2025 (Expected)",
   },
   {
-    icon: AcademicCapIcon,
+    icon: udemy,
     title: "The Complete 2024 Web Development Bootcamp - Udemy",
     children: `This comprehensive course covered front-end and back-end web development, including HTML5, CSS3, Flexbox,
     Grid, Bootstrap 5, JavaScript ES6, DOM manipulation, and React.js with Hooks. Backend topics included Node.js,
@@ -25,7 +26,7 @@ const EDUCATION = [
     date: "2024 - current",
   },
   {
-    icon: AcademicCapIcon,
+    icon: udemy,
     title: "Build mobile apps with React Native: From ZERO to EXPERT - Udemy",
     children: `This 10-hour course provided a comprehensive guide to building cross-platform mobile apps with React Native,
     covering essential and advanced topics. It included creating functional and class components, using React Context and
@@ -36,7 +37,7 @@ const EDUCATION = [
     date: "2024 - current",
   },
   {
-    icon: AcademicCapIcon,
+    icon: udemy,
     title: "React - The Complete Guide 2024 (incl. Next.js, Redux) - Udemy",
     children: `This course provided an in-depth introduction to React.js and Next.js, covering core
     concepts such as components, props, state management, and dynamic data binding. Topics included React Hooks,
@@ -55,7 +56,7 @@ const EDUCATION = [
   //   date: "2024",
   // },
   {
-    icon: AcademicCapIcon,
+    icon: concordia,
     title: "Excel Training Program - Concordia University",
     children: `The Excel Training Program is a voluntary series of microlearning concept videos and assessments, to enhance my excel
         skills and readiness. Covers, Excel basics, data wrangling and date time handling, LOOKUP functions and charts, array

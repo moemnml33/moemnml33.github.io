@@ -46,7 +46,7 @@ export default function AboutCard() {
         <Avatar src={moebooka} alt="avatar" size="xl" />
         <CardBody className="p-0 pt-6">
           <Typography variant="h2" color="white" className="mb-2">
-            Junior web and mobile developer, independent artist.
+            Junior full-stack web developer, independent artist.
           </Typography>
           <Typography className="text-zinc-400">
             I'm Mohamad, a{" "}

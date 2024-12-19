@@ -5,9 +5,10 @@ import {
   PuzzlePieceIcon,
   RectangleGroupIcon,
   SwatchIcon,
-} from "@heroicons/react/24/solid";
+} from "@heroicons/react/24/solid"; // https://github.com/tailwindlabs/heroicons/tree/master/src/24/solid
 import { Typography } from "@material-tailwind/react";
 import { motion } from "framer-motion";
+// import DevicePhoneMobileIcon from "../assets/icons/device-phone-mobile.svg";
 import ableton from "../assets/tech-stack-icons/Ableton.png";
 import androidstudio from "../assets/tech-stack-icons/AndroidStudio.png";
 import css from "../assets/tech-stack-icons/CSS.png";
@@ -66,9 +67,9 @@ const SKILLS = [
   },
   {
     icon: RectangleGroupIcon,
-    title: "Frontend Web Development",
+    title: "Full-Stack Web Development ",
     children:
-      "Creating beautiful and functional web experiences is my forte. Using the latest technologies and best practices, I design and build experiences that captivate and engage users.",
+      "Crafting seamless and dynamic web applications is my specialty. From designing engaging user interfaces to building robust back-end systems, I create end-to-end solutions that deliver exceptional user experiences.",
     date: "Technical Skills",
   },
   {
@@ -116,7 +117,7 @@ const SKILLS = [
 export function Skills() {
   return (
     <motion.section
-      className="mb-6 xl:mx-15 pt-6"
+      className="mb-4 xl:mx-15 pt-6"
       id="skills"
       initial={{ opacity: 0 }}
       whileInView={{

@@ -1,4 +1,9 @@
-import { CardBody, CardHeader, Typography } from "@material-tailwind/react";
+import {
+  Avatar,
+  CardBody,
+  CardHeader,
+  Typography,
+} from "@material-tailwind/react";
 import { motion } from "framer-motion";
 import React, { useEffect } from "react";
 
@@ -42,8 +47,12 @@ export function SkillCard({ icon: Icon, title, children, date }) {
             {title}
           </Typography>
         </div>
-        <div className="grid mb-4 h-10 w-10 place-items-center rounded-full bg-gray-900 p-2 text-white shadow flex-shrink-0 absolute top-0 right-0">
-          <Icon className="h-6 w-6" strokeWidth={2} />
+        <div className="grid mb-4 h-10 w-10 place-items-center rounded-full bg-gray-800 text-white flex-shrink-0 absolute top-0 right-0">
+          {typeof Icon === "string" ? (
+            <Avatar src={Icon} alt={`${Icon}`} size="sm" />
+          ) : (
+            <Icon className="h-6 w-6" strokeWidth={2} />
+          )}
         </div>
       </CardHeader>
       <CardBody className="grid justify-start px-4 pt-1 pb-2 mb-1 max-h-32 overflow-y-auto">

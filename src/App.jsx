@@ -21,7 +21,7 @@ function App() {
       {/* <div className="container flex-col justify-center sm:w-11/12 bg-zinc-900 sm:border-x sm:border-zinc-700"> */}
       {/* <div className={styling}> */}
       <main
-        className={`${theme} text-foreground bg-background container flex-col justify-center min-w-full px-5`}
+        className={`${theme} text-foreground bg-background container flex-col justify-center min-w-full px-5 h-full`}
       >
         <SimpleNavbar />
         <AboutCard />

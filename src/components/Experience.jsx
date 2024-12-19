@@ -10,18 +10,18 @@ const EXPERIENCE = [
   {
     icon: healthcaresystems,
     title:
-      "Machine Learning & Computer Vision Intern - Healthcare Systems R&A Inc., Montreal, QC (Remote)",
+      "Machine Learning & Computer Vision Intern - Healthcare Systems R&A Inc., Montreal",
     children: `Developed mobile apps for iOS and Android simulators, resolving platform-specific backend issues.
     Integrated spine prediction and pain score estimation models, while debugging video processing and data-handling
     issues. Improved predictive modelling accuracy with Artificial Neural Networks (ANNs). Enhanced model stability and
     performance with iterative data imputation, cross-validation, and PCA. Streamlined app usability and created
     comprehensive setup guides and troubleshooting documentation.`,
-    date: "September 2024 - December 2024",
+    date: "Sep 2024 - Dec 2024",
   },
   {
     icon: healthcaresystems,
     title:
-      "Full-stack Web & Mobile Dev Intern - Healthcare Systems R&A Inc., Montreal, QC (Remote)",
+      "Full-stack Web & Mobile Dev Intern - Healthcare Systems R&A Inc., Montreal",
     children: `Full-stack React frontend with calendar-based date selection for data fetching and display, and Express.js
     backend with API endpoints for retrieving and aggregating data from SQLite3 database. Enhanced React Native app usability 
     with intuitive navigation, live camera feed processing, video upload, front/back camera toggling, and LineChart for pain-related data 
@@ -30,8 +30,7 @@ const EXPERIENCE = [
   },
   {
     icon: healthcaresystems,
-    title:
-      "Python Game Dev Intern - Healthcare Systems R&A Inc., Montreal, QC (Remote)",
+    title: "Python Game Dev Intern - Healthcare Systems R&A Inc., Montreal",
     children: `Designed and developed interactive applications and games in Python, integrating with a Brain-Computer Interface
     (BCI) model to control apps using brain signals. Ensured seamless synchronization between the BCI and applications for smooth
     interaction. Created a clean, user-friendly GUI with an intuitive layout, visual appeal, and engaging sound effects to enhance user experience.`,
@@ -39,7 +38,7 @@ const EXPERIENCE = [
   },
   {
     icon: bureauengros,
-    title: "Technology Sales - Bureau En Gros/Staples, Montreal, QC",
+    title: "Technology Sales - Bureau En Gros/Staples, Montreal",
     children: `Analyzed client needs and provided personalized solutions using in-depth knowledge of technology products and services.
     Provided technical support, troubleshooting, and warranty-related inquiries for various devices. Maintained an organized stock system
     for efficient operations and streamlined customer service.`,
@@ -47,7 +46,7 @@ const EXPERIENCE = [
   },
   {
     icon: timhortons,
-    title: "Assistant Manager - Tim Horton's, Montreal, QC",
+    title: "Assistant Manager - Tim Horton's, Montreal",
     children: `Fostered a team environment to drive sales and revenue by building strong relationships. Strategically allocated 
       tasks based on strengths and goals to maximize efficiency. Interviewed new hires, provided coaching, training, and customer 
       service guidance. Thrived in high-pressure environments with an organized workflow.`,

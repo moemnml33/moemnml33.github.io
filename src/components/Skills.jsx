@@ -59,10 +59,10 @@ const TECH_ICONS_SEC = [
 
 const SKILLS = [
   {
-    icon: EyeIcon,
-    title: "User-Centric Design",
+    icon: PuzzlePieceIcon,
+    title: "Problem Solving",
     children:
-      "My development goes hand-in-hand with an eye for design. I create user interfaces that are not only functional but also aesthetically pleasing, providing a seamless and enjoyable user journey.",
+      "I thrive on challenges and mentally stimulating tasks, which sparked my passion for coding and led me to pursue computer science. Whether it's building apps, websites, or user interfaces, I find joy in solving problems through writing code, embracing every opportunity to learn and innovate.",
     date: "Soft Skills",
   },
   {
@@ -76,7 +76,7 @@ const SKILLS = [
     icon: LightBulbIcon,
     title: "Attention To Detail",
     children:
-      "Committed to exceptional code quality, intuitive user interface design, and thorough testing to deliver flawless, user-friendly web applications. Continuously striving to innovate and optimize, ensuring every project exceeds expectations.",
+      "I ensure every aspect of a project is carefully planned, tested, and executed. From clean, efficient code to polished user interfaces, my focus is on delivering high-quality, dependable solutions.",
     date: "Soft Skills",
   },
   {
@@ -87,10 +87,10 @@ const SKILLS = [
     date: "Technical Skills",
   },
   {
-    icon: PuzzlePieceIcon,
+    icon: EyeIcon,
     title: "Creative Thinking",
     children:
-      "Committed to exceptional code quality, intuitive user interface design, and thorough testing to deliver flawless, user-friendly web applications. Continuously striving to innovate and optimize, ensuring every project exceeds expectations.",
+      "I bring innovative solutions to complex challenges, thinking outside the box to optimize workflows, improve user experiences, and push the boundaries of what's possible in development.",
     date: "Soft Skills",
   },
   {
@@ -140,7 +140,7 @@ export function Skills() {
           </span>
           . My passion lies in{" "}
           <span className="inline text-cyan-600 font-semibold">
-            blending creativity with technology
+            blending intelliogence with creativity and technology
           </span>
           , whether I'm developing apps or DJing, to{" "}
           <span className="inline text-cyan-600 font-semibold">

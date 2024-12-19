@@ -14,7 +14,7 @@ export default function PhotoGallery() {
   return (
     <>
       <motion.section
-        className="flex flex-row space-x-6 rounded-xl overflow-x-auto bg-trasparent justify-center absolute inset-x-0 py-2 pb-16 no-scrollbar"
+        className="flex flex-row space-x-6 rounded-xl overflow-x-auto bg-trasparent justify-center absolute inset-x-0 py-2 pb-16 scrollbar-hide"
         initial={{ opacity: 0 }}
         whileInView={{
           opacity: 1,

@@ -57,7 +57,7 @@ const EDUCATION = [
   // },
   {
     icon: concordia,
-    title: "Excel Training Program - Concordia University",
+    title: "Excel Training Program - Concordia University, Montreal",
     children: `The Excel Training Program is a voluntary series of microlearning concept videos and assessments, to enhance my excel
         skills and readiness. Covers, Excel basics, data wrangling and date time handling, LOOKUP functions and charts, array
         formulae and data analysis.`,

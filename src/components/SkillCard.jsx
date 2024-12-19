@@ -55,7 +55,7 @@ export function SkillCard({ icon: Icon, title, children, date }) {
           )}
         </div>
       </CardHeader>
-      <CardBody className="grid justify-start px-4 pt-1 pb-2 mb-1 max-h-32 overflow-y-auto">
+      <CardBody className="grid justify-start px-4 pt-1 pb-2 mb-1 max-h-36 overflow-y-auto">
         <Typography className="!text-zinc-400 text-md">{children}</Typography>
       </CardBody>
     </motion.div>

@@ -64,18 +64,18 @@ export default withMT({
   plugins: [
     nextui({
       themes: {
-        light: {
-          colors: {
-            background: "#f1f5f9",
-            cardBackground: "#f8fafc",
-            textBackground: "#0f172a",
-          },
-        },
         dark: {
           colors: {
             background: "#18181b",
             cardBackground: "#27272a",
             textBackground: "#a1a1aa",
+          },
+        },
+        light: {
+          colors: {
+            background: "#f1f5f9",
+            cardBackground: "#f8fafc",
+            textBackground: "#0f172a",
           },
         },
       },

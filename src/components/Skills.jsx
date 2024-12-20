@@ -140,7 +140,7 @@ export function Skills() {
           </span>
           . My passion lies in{" "}
           <span className="inline text-cyan-600 font-semibold">
-            blending intelliogence with creativity and technology
+            blending intelligence with creativity and technology
           </span>
           , whether I'm developing apps or DJing, to{" "}
           <span className="inline text-cyan-600 font-semibold">

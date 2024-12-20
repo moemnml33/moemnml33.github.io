@@ -46,20 +46,21 @@ export default function AboutCard() {
         <Avatar src={moebooka} alt="avatar" size="xl" />
         <CardBody className="p-0 pt-6">
           <Typography variant="h2" color="white" className="mb-2">
-            Junior full-stack web developer, independent artist.
+            Junior Full-Stack & App Developer, Independent Artist
           </Typography>
           <Typography className="text-zinc-400">
-            I'm Mohamad, a{" "}
+            I'm Mohamad -{" "}
             <span className="inline text-cyan-600 font-semibold">
-              junior software developer
+              a junior full-stack and app developer, as well as an independent
+              artist
             </span>{" "}
-            from Montreal with up to one year of work experience as a software
-            engineering research assistant, as well as an independent DJ, and
-            currently a{" "}
+            based in Montreal. I hold up to one year of work experience as a
+            software engineering research assistant, I am currently in my{" "}
             <span className="inline text-cyan-600 font-semibold">
-              fourth-year computer science student
+              fifth & last year of a Computer Science degree
             </span>{" "}
-            at Concordia University. It all started with a simple Hello World...
+            at Concordia University. It all began with a simple "Hello, World!"
+            program... Let's connect!
           </Typography>
         </CardBody>
         <CardFooter className="px-0 pt-4 pb-8">

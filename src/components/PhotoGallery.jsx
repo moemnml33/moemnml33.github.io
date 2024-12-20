@@ -1,4 +1,4 @@
-import { Image } from "@nextui-org/react";
+import { Image } from "@nextui-org/react"; // Image component has a built-in skeleton animation to indicate the image is loading and an opacity animation when the image loads.
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import coding from "../assets/gallery/coding.png";

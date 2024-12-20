@@ -5,6 +5,7 @@ import bureauengros from "../assets/institutions-logos/bureauengros.png";
 import healthcaresystems from "../assets/institutions-logos/healthcaresystemsr&a.png";
 import timhortons from "../assets/institutions-logos/timhortons.jpeg";
 import SkillCard from "./SkillCard";
+import TextHighlight from "./TextHighlight";
 
 const EXPERIENCE = [
   {
@@ -75,24 +76,19 @@ export default function Experience() {
         </Typography>
         <Typography className="mx-auto w-full dark:text-zinc-400 lg:w-10/12">
           I'm not just a developer; I'm a{" "}
-          <span className="inline text-cyan-600 font-semibold">
+          <TextHighlight>
             well-rounded professional with a creative edge
-          </span>
+          </TextHighlight>
           . My year as a{" "}
-          <span className="inline text-cyan-600 font-semibold">
-            Software Engineering Research Assistant
-          </span>
+          <TextHighlight>Software Engineering Research Assistant</TextHighlight>
           , along with experience as an assistant manager, tech salesperson, and
           DJ, has sharpened my{" "}
-          <span className="inline text-cyan-600 font-semibold">
+          <TextHighlight>
             technical, leadership, and creative skills
-          </span>
+          </TextHighlight>
           . This diverse background prepares me to tackle challenges from
           multiple angles and{" "}
-          <span className="inline text-cyan-600 font-semibold">
-            craft innovative solutions
-          </span>
-          .
+          <TextHighlight>craft innovative solutions</TextHighlight>.
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-6 gap-y-4">

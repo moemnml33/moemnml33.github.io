@@ -4,6 +4,7 @@ import React from "react";
 import concordia from "../assets/institutions-logos/concordia.png";
 import udemy from "../assets/institutions-logos/udemy.png";
 import SkillCard from "./SkillCard";
+import TextHighlight from "./TextHighlight";
 
 const EDUCATION = [
   {
@@ -88,14 +89,14 @@ export default function Education() {
           Driven by a passion for continuous growth, each milestone in my
           academic and professional training has equipped me with the skills
           needed to{" "}
-          <span className="inline text-cyan-600 font-semibold">
+          <TextHighlight>
             innovate and excel in creating impactful digital solutions
-          </span>
+          </TextHighlight>
           . From mastering core programming languages to earning specialized
           certifications, my educational background reflects my{" "}
-          <span className="inline text-cyan-600 font-semibold">
+          <TextHighlight>
             commitment to staying at the forefront of technology
-          </span>
+          </TextHighlight>
           .
         </Typography>
       </div>

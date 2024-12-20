@@ -30,6 +30,7 @@ import tailwind from "../assets/tech-stack-icons/TailwindCSS.png";
 import vite from "../assets/tech-stack-icons/Vite.png";
 import vscode from "../assets/tech-stack-icons/VSCode.png";
 import { SkillCard } from "./SkillCard";
+import TextHighlight from "./TextHighlight";
 
 const TECH_ICONS_MAIN = [
   java,
@@ -135,17 +136,13 @@ export function Skills() {
         </Typography>
         <Typography className="mx-auto w-full dark:text-zinc-400 lg:w-10/12">
           I&apos;m not just a developer; I&apos;m a{" "}
-          <span className="inline text-cyan-600 font-semibold">
-            curator of digital experiences
-          </span>
-          . My passion lies in{" "}
-          <span className="inline text-cyan-600 font-semibold">
+          <TextHighlight>curator of digital experiences</TextHighlight>. My
+          passion lies in{" "}
+          <TextHighlight>
             blending intelligence with creativity and technology
-          </span>
+          </TextHighlight>
           , whether I'm developing apps or DJing, to{" "}
-          <span className="inline text-cyan-600 font-semibold">
-            design and craft memorable experiences
-          </span>{" "}
+          <TextHighlight>design and craft memorable experiences</TextHighlight>{" "}
           for my audience.
         </Typography>
       </div>

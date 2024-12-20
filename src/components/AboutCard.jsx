@@ -7,6 +7,7 @@ import {
 } from "@material-tailwind/react";
 import { motion } from "framer-motion";
 import moebooka from "../assets/gallery/moebooka.JPEG";
+import TextHighlight from "./TextHighlight";
 
 export default function AboutCard() {
   const handleGithub = () => {
@@ -50,15 +51,15 @@ export default function AboutCard() {
           </Typography>
           <Typography className="text-zinc-400">
             I'm Mohamad -{" "}
-            <span className="inline text-cyan-600 font-semibold">
+            <TextHighlight>
               a junior full-stack and app developer, as well as an independent
               artist
-            </span>{" "}
+            </TextHighlight>{" "}
             based in Montreal. I hold up to one year of work experience as a
             software engineering research assistant, I am currently in my{" "}
-            <span className="inline text-cyan-600 font-semibold">
+            <TextHighlight>
               fifth & last year of a Computer Science degree
-            </span>{" "}
+            </TextHighlight>{" "}
             at Concordia University. It all began with a simple "Hello, World!"
             program... Let's connect!
           </Typography>

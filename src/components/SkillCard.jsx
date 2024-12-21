@@ -52,6 +52,7 @@ export function SkillCard({ icon: Icon, title, children, date }) {
         </div>
       </CardHeader>
       <ScrollShadow
+        size={25}
         hideScrollBar
         className="grid justify-start px-4 pt-1 pb-2 mb-1 max-h-32 overflow-y-auto"
       >

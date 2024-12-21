@@ -10,7 +10,7 @@ const bg_color_white = "bg-white";
 
 function App() {
   const { theme, setTheme } = useTheme("dark");
-  const handleTheme = () => {
+  const handleTheme = (theme) => {
     if (theme === "dark") {
       setTheme("light");
     } else setTheme("dark");
@@ -25,7 +25,10 @@ function App() {
       >
         <SimpleNavbar />
         <AboutCard />
-        {/* <button onClick={() => handleTheme()} className="text-deep-orange-900">
+        {/* <button
+          onClick={() => handleTheme(theme)}
+          className="text-deep-orange-900"
+        >
           button
         </button> */}
         <PhotoGallery />

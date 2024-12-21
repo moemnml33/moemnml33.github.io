@@ -1,9 +1,5 @@
-import {
-  Avatar,
-  CardBody,
-  CardHeader,
-  Typography,
-} from "@material-tailwind/react";
+import { Avatar, CardHeader, Typography } from "@material-tailwind/react";
+import { ScrollShadow } from "@nextui-org/scroll-shadow";
 import { motion } from "framer-motion";
 import React, { useEffect } from "react";
 
@@ -55,9 +51,12 @@ export function SkillCard({ icon: Icon, title, children, date }) {
           )}
         </div>
       </CardHeader>
-      <CardBody className="grid justify-start px-4 pt-1 pb-2 mb-1 max-h-36 overflow-y-auto">
+      <ScrollShadow
+        hideScrollBar
+        className="grid justify-start px-4 pt-1 pb-2 mb-1 max-h-32 overflow-y-auto"
+      >
         <Typography className="!text-zinc-400 text-md">{children}</Typography>
-      </CardBody>
+      </ScrollShadow>
     </motion.div>
   );
 }

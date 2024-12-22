@@ -102,6 +102,7 @@ export default function SimpleNavbar() {
               key={index}
               href={item.link}
               className="block py-2 text-white text-medium hover:text-cyan-400"
+              onClick={closeDrawer}
             >
               {item.title}
             </a>

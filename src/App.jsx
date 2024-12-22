@@ -1,9 +1,9 @@
 import { useTheme } from "@nextui-org/use-theme";
 import "./App.css";
-import AboutCard from "./components/AboutCard";
-import InformationSection from "./components/InformationSection";
 import SimpleNavbar from "./components/Navbar";
-import PhotoGallery from "./components/PhotoGallery";
+import AboutCard from "./sections/AboutCard";
+import InformationSection from "./sections/InformationSection";
+import PhotoGallery from "./sections/PhotoGallery";
 const bg_color_dark = "bg-zinc-900";
 const bg_color_white = "bg-white";
 // const styling = `${bg_color_dark} container flex-col justify-center min-w-full px-5`;

@@ -4,8 +4,8 @@ import React from "react";
 import bureauengros from "../assets/institutions-logos/bureauengros.png";
 import healthcaresystems from "../assets/institutions-logos/healthcaresystemsr&a.png";
 import timhortons from "../assets/institutions-logos/timhortons.jpeg";
-import SkillCard from "./SkillCard";
-import TextHighlight from "./TextHighlight";
+import SkillCard from "../components/SkillCard";
+import TextHighlight from "../components/TextHighlight";
 
 const EXPERIENCE = [
   {

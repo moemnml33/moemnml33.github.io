@@ -29,8 +29,8 @@ import sqlite from "../assets/tech-stack-icons/SQLite.png";
 import tailwind from "../assets/tech-stack-icons/TailwindCSS.png";
 import vite from "../assets/tech-stack-icons/Vite.png";
 import vscode from "../assets/tech-stack-icons/VSCode.png";
-import { SkillCard } from "./SkillCard";
-import TextHighlight from "./TextHighlight";
+import { SkillCard } from "../components/SkillCard";
+import TextHighlight from "../components/TextHighlight";
 
 const TECH_ICONS_MAIN = [
   java,

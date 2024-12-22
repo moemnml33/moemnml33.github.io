@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import React from "react";
 import concordia from "../assets/institutions-logos/concordia.png";
 import udemy from "../assets/institutions-logos/udemy.png";
-import SkillCard from "./SkillCard";
-import TextHighlight from "./TextHighlight";
+import SkillCard from "../components/SkillCard";
+import TextHighlight from "../components/TextHighlight";
 
 const EDUCATION = [
   {

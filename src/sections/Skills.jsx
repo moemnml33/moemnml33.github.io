@@ -25,9 +25,9 @@ import php from "../assets/tech-stack-icons/PHP.png";
 import python from "../assets/tech-stack-icons/Python.png";
 import qt from "../assets/tech-stack-icons/QT.png";
 import react from "../assets/tech-stack-icons/React.png";
+import sequelize from "../assets/tech-stack-icons/Sequelize.svg";
 import sqlite from "../assets/tech-stack-icons/SQLite.png";
 import tailwind from "../assets/tech-stack-icons/TailwindCSS.png";
-import vite from "../assets/tech-stack-icons/Vite.png";
 import vscode from "../assets/tech-stack-icons/VSCode.png";
 import { SkillCard } from "../components/SkillCard";
 import TextHighlight from "../components/TextHighlight";
@@ -35,26 +35,26 @@ import TextHighlight from "../components/TextHighlight";
 const TECH_ICONS_MAIN = [
   java,
   python,
-  react,
   html,
   css,
   js,
+  react,
+  nodejs,
+  sequelize,
+  sqlite,
   tailwind,
-  vite,
-  figma,
-  github,
 ];
 
 const TECH_ICONS_SEC = [
+  figma,
   qt,
-  mysql,
-  sqlite,
-  nodejs,
-  npm,
   php,
+  npm,
+  mysql,
   vscode,
   eclipse,
   androidstudio,
+  github,
   ableton,
 ];
 

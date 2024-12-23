@@ -1,14 +1,16 @@
 import { Bars3Icon } from "@heroicons/react/24/solid";
+import { Navbar } from "@material-tailwind/react";
 import {
   Button,
   Drawer,
-  IconButton,
-  Navbar,
-  Typography,
-} from "@material-tailwind/react";
+  DrawerBody,
+  DrawerContent,
+  DrawerHeader,
+  useDisclosure,
+} from "@nextui-org/react";
+
 import React from "react";
 
-// const LINKS = ["About", "Experience", "Education", "Uses"];
 const LINKS = [
   { title: "About", link: "#about" },
   { title: "Education", link: "#education" },
@@ -22,10 +24,7 @@ export default function SimpleNavbar() {
     window.addEventListener("resize", () => window.innerWidth >= 960);
   }, []);
 
-  const [open, setOpen] = React.useState(false);
-
-  const openDrawer = () => setOpen(true);
-  const closeDrawer = () => setOpen(false);
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
     <>
@@ -52,7 +51,7 @@ export default function SimpleNavbar() {
       </Menu> */}
         <Button
           className="text-xs lg:hidden py-0 px-2 m-0 bg-transparent"
-          onClick={openDrawer}
+          onPress={onOpen}
         >
           <Bars3Icon className="h-6 w-6 text-white" />
         </Button>
@@ -70,44 +69,52 @@ export default function SimpleNavbar() {
         </div>
       </Navbar>
       <Drawer
-        open={open}
-        onClose={closeDrawer}
-        className="p-4 bg-gray-900 text-white"
-        size={240}
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        placement="left"
+        backdrop="blur"
+        size="xs"
+        motionProps={{
+          variants: {
+            enter: {
+              opacity: 1,
+              x: 0,
+              duration: 1,
+            },
+            exit: {
+              x: 0,
+              opacity: 0,
+              duration: 1,
+            },
+          },
+        }}
       >
-        <div className="mb-6 flex items-center justify-between">
-          <Typography variant="h5" color="white">
-            Menu
-          </Typography>
-          <IconButton variant="text" color="white" onClick={closeDrawer}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="currentColor"
-              className="h-5 w-5"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </IconButton>
-        </div>
-        <div>
-          {LINKS.map((item, index) => (
-            <a
-              key={index}
-              href={item.link}
-              className="block py-1 text-zinc-300 text-medium hover:text-cyan-400 duration-300 ease-in-out"
-              onClick={closeDrawer}
-            >
-              {item.title}
-            </a>
-          ))}
-        </div>
+        <DrawerContent>
+          {(onClose) => (
+            <>
+              <DrawerHeader
+                className="flex flex-col gap-1 text-3xl"
+                color="white"
+              >
+                Menu
+              </DrawerHeader>
+              <DrawerBody>
+                <div>
+                  {LINKS.map((item, index) => (
+                    <a
+                      key={index}
+                      href={item.link}
+                      className="block py-2 text-zinc-300 text-large hover:text-cyan-400 duration-300 ease-in-out"
+                      onClick={onClose}
+                    >
+                      {item.title}
+                    </a>
+                  ))}
+                </div>
+              </DrawerBody>
+            </>
+          )}
+        </DrawerContent>
       </Drawer>
     </>
   );

@@ -29,7 +29,7 @@ export default function SimpleNavbar() {
 
   return (
     <>
-      <Navbar className="fixed backdrop-filter backdrop-blur-md top-0 inset-x-0 z-10 h-max max-w-full border-none rounded-none py-3 px-5 bg-black flex md:justify-around">
+      <Navbar className="fixed backdrop-filter backdrop-blur-md top-0 inset-x-0 z-10 h-max max-w-full border-none rounded-none py-3 px-5 bg-black flex lg:justify-around">
         {/* <Menu
         animate={{
           mount: { y: 0 },
@@ -51,12 +51,12 @@ export default function SimpleNavbar() {
         </MenuList>
       </Menu> */}
         <Button
-          className="text-xs md:hidden py-0 px-2 m-0 bg-transparent"
+          className="text-xs lg:hidden py-0 px-2 m-0 bg-transparent"
           onClick={openDrawer}
         >
           <Bars3Icon className="h-6 w-6 text-white" />
         </Button>
-        <div className="text-slate-500 dark:text-zinc-400 hidden md:block">
+        <div className="text-slate-500 dark:text-zinc-400 hidden lg:block">
           {LINKS.map((item, index) => (
             <a
               key={index}

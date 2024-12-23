@@ -29,7 +29,7 @@ export default function SimpleNavbar() {
 
   return (
     <>
-      <Navbar className="fixed backdrop-filter backdrop-blur-md top-0 inset-x-0 z-10 h-max max-w-full border-none rounded-none py-3 px-5 bg-black flex sm:justify-around">
+      <Navbar className="fixed backdrop-filter backdrop-blur-md top-0 inset-x-0 z-10 h-max max-w-full border-none rounded-none py-3 px-5 bg-black flex md:justify-around">
         {/* <Menu
         animate={{
           mount: { y: 0 },
@@ -51,17 +51,17 @@ export default function SimpleNavbar() {
         </MenuList>
       </Menu> */}
         <Button
-          className="text-xs sm:hidden py-1 px-2 m-0 bg-transparent"
+          className="text-xs md:hidden py-0 px-2 m-0 bg-transparent"
           onClick={openDrawer}
         >
           <Bars3Icon className="h-6 w-6 text-white" />
         </Button>
-        <div className="text-slate-500 dark:text-zinc-400 hidden sm:block">
+        <div className="text-slate-500 dark:text-zinc-400 hidden md:block">
           {LINKS.map((item, index) => (
             <a
               key={index}
               href={item.link}
-              className="px-2 md:px-4 cursor-pointer py-1.5 text-sm font-light hover:text-cyan-400 duration-300 ease-in-out text-zinc-400"
+              className="px-2 md:px-4 cursor-pointer py-1.5 text-sm font-light hover:text-cyan-400 duration-300 ease-in-out text-zinc-300"
             >
               {item.title}
             </a>
@@ -101,7 +101,7 @@ export default function SimpleNavbar() {
             <a
               key={index}
               href={item.link}
-              className="block py-2 text-white text-medium hover:text-cyan-400"
+              className="block py-1 text-zinc-300 text-medium hover:text-cyan-400 duration-300 ease-in-out"
               onClick={closeDrawer}
             >
               {item.title}

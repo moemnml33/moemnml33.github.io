@@ -67,7 +67,7 @@ export default function PhotoGallery() {
           />
         </Tilt>
       </motion.section>
-      <div className="h-72 md:h-96 mb-4"></div>
+      <div className="h-64 md:h-80"></div>
     </>
   );
 }

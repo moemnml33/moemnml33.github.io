@@ -69,7 +69,7 @@ const EDUCATION = [
 export default function Education() {
   return (
     <motion.section
-      className="mb-4 xl:mx-15 pt-6"
+      className="mb-4 xl:mx-15 pt-20"
       id="education"
       initial={{ opacity: 0 }}
       whileInView={{

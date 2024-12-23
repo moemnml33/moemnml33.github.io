@@ -58,7 +58,7 @@ const EXPERIENCE = [
 export default function Experience() {
   return (
     <motion.section
-      className="mb-4 xl:mx-15 pt-6"
+      className="mb-4 xl:mx-15 pt-20"
       id="experience"
       initial={{ opacity: 0 }}
       whileInView={{

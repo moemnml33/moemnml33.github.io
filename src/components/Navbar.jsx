@@ -29,28 +29,8 @@ export default function SimpleNavbar() {
   return (
     <>
       <Navbar className="fixed backdrop-filter backdrop-blur-md top-0 inset-x-0 z-10 h-max max-w-full border-none rounded-none py-3 px-5 bg-black flex lg:justify-around">
-        {/* <Menu
-        animate={{
-          mount: { y: 0 },
-          unmount: { y: 25 },
-        }}
-        placement="bottom-end"
-      >
-        <MenuHandler>
-          <Button className="text-xs sm:hidden py-1 px-2 m-0 bg-transparent">
-            <Bars3Icon className="h-6 w-6 text-white" />
-          </Button>
-        </MenuHandler>
-        <MenuList className="bg-black border-blue-gray-900 text-white rounded-xl">
-          {LINKS.map((item, index) => (
-            <MenuItem key={index}>
-              <a href={item.link}>{item.title}</a>
-            </MenuItem>
-          ))}
-        </MenuList>
-      </Menu> */}
         <Button
-          className="text-xs lg:hidden py-0 px-2 m-0 bg-transparent"
+          className="text-xs lg:hidden p-0 m-0 min-w-10 max-h-6 bg-transparent"
           onPress={onOpen}
         >
           <Bars3Icon className="h-6 w-6 text-white" />
@@ -118,4 +98,27 @@ export default function SimpleNavbar() {
       </Drawer>
     </>
   );
+}
+
+{
+  /* <Menu
+        animate={{
+          mount: { y: 0 },
+          unmount: { y: 25 },
+        }}
+        placement="bottom-end"
+      >
+        <MenuHandler>
+          <Button className="text-xs sm:hidden py-1 px-2 m-0 bg-transparent">
+            <Bars3Icon className="h-6 w-6 text-white" />
+          </Button>
+        </MenuHandler>
+        <MenuList className="bg-black border-blue-gray-900 text-white rounded-xl">
+          {LINKS.map((item, index) => (
+            <MenuItem key={index}>
+              <a href={item.link}>{item.title}</a>
+            </MenuItem>
+          ))}
+        </MenuList>
+      </Menu> */
 }

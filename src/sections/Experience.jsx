@@ -1,9 +1,9 @@
 import { Typography } from "@material-tailwind/react";
-import { motion } from "framer-motion";
 import React from "react";
 import bureauengros from "../assets/institutions-logos/bureauengros.png";
 import healthcaresystems from "../assets/institutions-logos/healthcaresystemsr&a.png";
 import timhortons from "../assets/institutions-logos/timhortons.jpeg";
+import MotionSection from "../components/MotionSection";
 import SkillCard from "../components/SkillCard";
 import TextHighlight from "../components/TextHighlight";
 
@@ -22,7 +22,7 @@ const EXPERIENCE = [
   {
     icon: healthcaresystems,
     title:
-      "Full-stack Web & Mobile Dev Intern - Healthcare Systems R&A Inc., Montreal",
+      "Full-Stack Web & Mobile Dev Intern - Healthcare Systems R&A Inc., Montreal",
     children: `Full-stack React frontend with calendar-based date selection for data fetching and display, and Express.js
     backend with API endpoints for retrieving and aggregating data from SQLite3 database. Enhanced React Native app usability 
     with intuitive navigation, live camera feed processing, video upload, front/back camera toggling, and LineChart for pain-related data 
@@ -57,16 +57,7 @@ const EXPERIENCE = [
 
 export default function Experience() {
   return (
-    <motion.section
-      className="mb-4 xl:mx-15 pt-20"
-      id="experience"
-      initial={{ opacity: 0 }}
-      whileInView={{
-        opacity: 1,
-        transition: { delay: 0, duration: 0.7 },
-      }}
-      viewport={{ once: true, amount: 0.05 }}
-    >
+    <MotionSection id="experience">
       <div className="container mx-auto mb-10 text-center">
         <Typography color="white" className="mb-2 font-bold uppercase">
           Work & Experience
@@ -96,6 +87,6 @@ export default function Experience() {
           <SkillCard key={idx} {...props} />
         ))}
       </div>
-    </motion.section>
+    </MotionSection>
   );
 }

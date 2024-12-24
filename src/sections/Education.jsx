@@ -1,8 +1,8 @@
 import { Typography } from "@material-tailwind/react";
-import { motion } from "framer-motion";
 import React from "react";
 import concordia from "../assets/institutions-logos/concordia.png";
 import udemy from "../assets/institutions-logos/udemy.png";
+import MotionSection from "../components/MotionSection";
 import SkillCard from "../components/SkillCard";
 import TextHighlight from "../components/TextHighlight";
 
@@ -68,22 +68,13 @@ const EDUCATION = [
 
 export default function Education() {
   return (
-    <motion.section
-      className="mb-4 xl:mx-15 pt-20"
-      id="education"
-      initial={{ opacity: 0 }}
-      whileInView={{
-        opacity: 1,
-        transition: { delay: 0, duration: 0.7 },
-      }}
-      viewport={{ once: true, amount: 0.05 }}
-    >
+    <MotionSection id="education">
       <div className="container mx-auto mb-10 text-center">
         <Typography color="white" className="mb-2 font-bold uppercase">
           Education & Certifications
         </Typography>
         <Typography variant="h2" color="white" className="mb-4">
-          Eager to learn
+          Eager To Learn
         </Typography>
         <Typography className="mx-auto w-full dark:text-zinc-400 lg:w-10/12">
           Driven by a passion for continuous growth, each milestone in my
@@ -105,6 +96,6 @@ export default function Education() {
           <SkillCard key={idx} {...props} />
         ))}
       </div>
-    </motion.section>
+    </MotionSection>
   );
 }

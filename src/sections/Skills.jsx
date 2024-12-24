@@ -7,7 +7,6 @@ import {
   SwatchIcon,
 } from "@heroicons/react/24/solid"; // https://github.com/tailwindlabs/heroicons/tree/master/src/24/solid
 import { Typography } from "@material-tailwind/react";
-import { motion } from "framer-motion";
 // import DevicePhoneMobileIcon from "../assets/icons/device-phone-mobile.svg";
 import ableton from "../assets/tech-stack-icons/Ableton.png";
 import androidstudio from "../assets/tech-stack-icons/AndroidStudio.png";
@@ -29,6 +28,7 @@ import sequelize from "../assets/tech-stack-icons/Sequelize.svg";
 import sqlite from "../assets/tech-stack-icons/SQLite.png";
 import tailwind from "../assets/tech-stack-icons/TailwindCSS.png";
 import vscode from "../assets/tech-stack-icons/VSCode.png";
+import MotionSection from "../components/MotionSection";
 import { SkillCard } from "../components/SkillCard";
 import TextHighlight from "../components/TextHighlight";
 
@@ -117,22 +117,13 @@ const SKILLS = [
 
 export function Skills() {
   return (
-    <motion.section
-      className="mb-4 xl:mx-15 pt-20"
-      id="skills"
-      initial={{ opacity: 0 }}
-      whileInView={{
-        opacity: 1,
-        transition: { delay: 0, duration: 0.7 },
-      }}
-      viewport={{ once: true, amount: 0.05 }}
-    >
+    <MotionSection id="skills">
       <div className="container mx-auto mb-10 text-center">
         <Typography color="white" className="mb-2 font-bold uppercase">
           my skills
         </Typography>
         <Typography variant="h2" color="white" className="mb-4">
-          What I do
+          What I Do
         </Typography>
         <Typography className="mx-auto w-full dark:text-zinc-400 lg:w-10/12">
           I&apos;m not just a developer; I&apos;m a{" "}
@@ -160,7 +151,7 @@ export function Skills() {
           ))}
         </div>
       </div>
-    </motion.section>
+    </MotionSection>
   );
 }
 

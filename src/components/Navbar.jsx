@@ -16,7 +16,7 @@ const LINKS = [
   { title: "Education", link: "#education" },
   { title: "Experience", link: "#experience" },
   { title: "Skills", link: "#skills" },
-  { title: "Projects", link: "#" },
+  { title: "Projects", link: "#projects" },
 ];
 
 export default function SimpleNavbar() {

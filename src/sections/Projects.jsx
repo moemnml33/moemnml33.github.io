@@ -1,38 +1,55 @@
 import { Typography } from "@material-tailwind/react";
 import React from "react";
+import mineralLogsScreenshot from "../assets/projects/mineralLogsScreenshot.jpeg";
+// import musicCatalogExplorerScreenshot from "../assets/projects/musicCatalogExplorerScreenshot.jpeg";
+import portfolioScreenshot from "../assets/projects/portfolioScreenshot.jpeg";
+import snakeNTetrisScreenshot from "../assets/projects/snakeNTetrisScreenshot.jpg";
 import MotionSection from "../components/MotionSection";
+import ProjectCard from "../components/ProjectCard";
 import TextHighlight from "../components/TextHighlight";
 
 const PROJECTS = [
   {
-    title: "Problem Solving",
-    children:
-      "I thrive on challenges and mentally stimulating tasks, which sparked my passion for coding and led me to pursue computer science. Whether it's building apps, websites, or user interfaces, I find joy in solving problems through writing code, embracing every opportunity to learn and innovate.",
-    date: "Soft Skills",
+    image: portfolioScreenshot,
+    title: "Portfolio Website",
+    description: `A responsive portfolio website created with React and Tailwind CSS, featuring a modern design,
+    smooth animations, and an intuitive layout to showcase skills, projects, and experiences. The website is optimized
+    for performance and accessibility, ensuring a seamless experience across all devices.`,
+    skillOne: "#REACT",
+    skillTwo: "#TALWIND",
+    skillThree: "#FRONTEND",
   },
   {
-    title: "Full-Stack Web Development ",
-    children:
-      "Crafting seamless and dynamic web applications is my specialty. From designing engaging user interfaces to building robust back-end systems, I create end-to-end solutions that deliver exceptional user experiences.",
-    date: "Technical Skills",
+    image: mineralLogsScreenshot,
+    title: "Mineral Data Tracker",
+    description: `A full-stack interactive application for recording and retrieving runtime variables and settings from pipeline
+    processes as part of my summer 2024 internship. Features include a React.js front end with Tailwind CSS for date-based data selection, an Express.js
+    back end for database queries, and an SQLite database for structured data storage and retrieval. Users can explore
+    data in expandable sections, visualize feature importance in charts, and copy or save information with ease.`,
+    skillOne: "#REACT",
+    skillTwo: "#NODE",
+    skillThree: "#FULL-STACK",
   },
+  //   {
+  //     image: musicCatalogExplorerScreenshot,
+  //     title: "Music Catalog Explorer",
+  //     description: `A full-stack web application designed to query musicians, albums, and tracks using a React.js front end and a
+  //       Node.js back end. Features include an SQLite database with three relational tables (Musician, Album, Track), a basic user
+  //       interface for searching musicians and viewing related albums, and dynamic track details displayed in a table format.`,
+  //     skillOne: "#REACT",
+  //     skillTwo: "#NODE",
+  //     skillThree: "#FULL-STACK",
+  //   },
   {
-    title: "Attention To Detail",
-    children:
-      "I ensure every aspect of a project is carefully planned, tested, and executed. From clean, efficient code to polished user interfaces, my focus is on delivering high-quality, dependable solutions.",
-    date: "Soft Skills",
-  },
-  {
-    title: "Mobile App Development",
-    children:
-      "I am on a journey to master the art of creating responsive and intuitive mobile apps. My focus is on ensuring seamless performance across both iOS and Android devices, as I continuously explore and integrate the latest development techniques and best practices.",
-    date: "Technical Skills",
-  },
-  {
-    title: "Creative Thinking",
-    children:
-      "I bring innovative solutions to complex challenges, thinking outside the box to optimize workflows, improve user experiences, and push the boundaries of what's possible in development.",
-    date: "Soft Skills",
+    image: snakeNTetrisScreenshot,
+    title: "Snake / Tetris",
+    description: `Interactive applications and games, including Game Launcher, Tetris, and Snake, designed and programmed in
+    Python to integrate with a Brain-Computer Interface (BCI) model, enabling users to control them with brain signals. Features
+    include seamless synchronization between the BCI model and applications, a user-friendly GUI with intuitive layouts,
+    and engaging sound effects.`,
+    skillOne: "#PYTHON",
+    skillTwo: "#PYQT5",
+    skillThree: "#UX-UI",
   },
 ];
 
@@ -61,10 +78,14 @@ export default function Projects() {
           <TextHighlight>
             dedication to delivering impactful and user-focused solutions
           </TextHighlight>
-          .
+          . (more on my github)
         </Typography>
       </div>
-      <div className="container flex flex-col gap-y-4 mx-auto xl:flex-row md:gap-x-20"></div>
+      <div className="container grid md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-y-4 mx-auto xl:flex-row md:gap-x-20">
+        {PROJECTS.map((props, index) => (
+          <ProjectCard key={index} {...props} />
+        ))}
+      </div>
     </MotionSection>
   );
 }

@@ -23,7 +23,7 @@ export default function ProfileCard({
         floated={false}
         className="bg-transparent rounded-2xl aspect-w-16 aspect-h-9"
       >
-        <Image src={image} alt="project-picture" className="size-auto" />
+        <Image src={image} alt="project-picture" className="size-auto z-auto" />
       </CardHeader>
       <CardBody className="p-5 pb-1">
         <Typography color="white" variant="h4" className="mb-2">

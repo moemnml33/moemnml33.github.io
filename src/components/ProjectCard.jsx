@@ -21,7 +21,7 @@ export default function ProfileCard({
     <motion.div className="max-w-[360px] md:max-w-96 bg-cardBackground rounded-3xl shadow-md shadow-zinc-950/80 mb-4">
       <CardHeader
         floated={false}
-        className="bg-transparent rounded-2xl aspect-w-16 aspect-h-9"
+        className="bg-transparent rounded-2xl aspect-w-16 aspect-h-9 shadow-md shadow-zinc-950/80"
       >
         <Image src={image} alt="project-picture" className="size-auto z-auto" />
       </CardHeader>

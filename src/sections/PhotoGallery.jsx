@@ -7,7 +7,6 @@ import deeper from "../assets/gallery/deeper.JPG";
 import dj808 from "../assets/gallery/dj-808.JPG";
 import helloworld from "../assets/gallery/hello-world.png";
 import moebooka from "../assets/gallery/moebooka.JPEG";
-
 export default function PhotoGallery() {
   const handleCratedigger = () => {
     window.open("https://linktr.ee/cratediggers.anon", "_blank");

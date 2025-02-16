@@ -30,16 +30,16 @@ const PROJECTS = [
     skillTwo: "#NODE",
     skillThree: "#FULL-STACK",
   },
-  //   {
-  //     image: musicCatalogExplorerScreenshot,
-  //     title: "Music Catalog Explorer",
-  //     description: `A full-stack web application designed to query musicians, albums, and tracks using a React.js front end and a
+  // {
+  //   image: musicCatalogExplorerScreenshot,
+  //   title: "Music Catalog Explorer",
+  //   description: `A full-stack web application designed to query musicians, albums, and tracks using a React.js front end and a
   //       Node.js back end. Features include an SQLite database with three relational tables (Musician, Album, Track), a basic user
   //       interface for searching musicians and viewing related albums, and dynamic track details displayed in a table format.`,
-  //     skillOne: "#REACT",
-  //     skillTwo: "#NODE",
-  //     skillThree: "#FULL-STACK",
-  //   },
+  //   skillOne: "#REACT",
+  //   skillTwo: "#NODE",
+  //   skillThree: "#FULL-STACK",
+  // },
   {
     image: snakeNTetrisScreenshot,
     title: "Snake / Tetris",
@@ -78,7 +78,7 @@ export default function Projects() {
           <TextHighlight>
             dedication to delivering impactful and user-focused solutions
           </TextHighlight>
-          . (more on my github)
+          . More projects on my GitHub!
         </Typography>
       </div>
       <div className="container grid md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-y-4 mx-auto xl:flex-row md:gap-x-20">

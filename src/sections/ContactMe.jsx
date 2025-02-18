@@ -64,7 +64,7 @@ export default function ContactMe() {
             <input
               type="text"
               name="user_name"
-              className="p-3 w-full rounded-md bg-zinc-850 text-white border border-zinc-700 focus:border-cyan-400"
+              className="p-3 w-full rounded-md bg-gray-950 text-white border border-zinc-700 focus:border-cyan-400"
               required
             />
 
@@ -72,14 +72,14 @@ export default function ContactMe() {
             <input
               type="email"
               name="user_email"
-              className="p-3 w-full rounded-md bg-zinc-850 text-white border border-zinc-700 focus:border-cyan-400"
+              className="p-3 w-full rounded-md bg-gray-950 text-white border border-zinc-700 focus:border-cyan-400"
               required
             />
 
             <label className="text-zinc-400 text-lg">Message:</label>
             <textarea
               name="message"
-              className="p-3 w-full rounded-md bg-zinc-850 text-white border border-zinc-700 focus:border-cyan-400 h-40"
+              className="p-3 w-full rounded-md bg-gray-950 text-white border border-zinc-700 focus:border-cyan-400 h-40"
               rows="4"
               required
             />

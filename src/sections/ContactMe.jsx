@@ -52,8 +52,10 @@ export default function ContactMe() {
         viewport={viewport}
       >
         <CardBody className="bg-cardBackground flex flex-col items-center justify-center rounded-3xl p-4">
-          {successMessage || (
-            <div className="appearance-none text-xl mb-3 text-green-600">{successMessage}</div>
+          {successMessage && (
+            <div className="appearance-none text-xl mb-3 text-green-600">
+              {successMessage}
+            </div>
           )}
           <form
             ref={form}
@@ -64,7 +66,7 @@ export default function ContactMe() {
             <input
               type="text"
               name="user_name"
-              className="appearance-none p-3 w-full rounded-md bg-gray-950 text-white border border-zinc-700 focus:border-cyan-400"
+              className="p-3 w-full rounded-md bg-gray-950 text-white border border-zinc-700 focus:border-cyan-400"
               required
             />
 
@@ -72,14 +74,14 @@ export default function ContactMe() {
             <input
               type="email"
               name="user_email"
-              className="appearance-none p-3 w-full rounded-md bg-gray-950 text-white border border-zinc-700 focus:border-cyan-400"
+              className="p-3 w-full rounded-md bg-gray-950 text-white border border-zinc-700 focus:border-cyan-400"
               required
             />
 
             <label className="text-zinc-400 text-lg">Message:</label>
             <textarea
               name="message"
-              className="appearance-none p-3 w-full rounded-md bg-gray-950 text-white border border-zinc-700 focus:border-cyan-400 h-40"
+              className="p-3 w-full rounded-md bg-gray-950 text-white border border-zinc-700 focus:border-cyan-400 h-24 min-h-24"
               rows="4"
               required
             />

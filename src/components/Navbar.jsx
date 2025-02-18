@@ -17,6 +17,7 @@ const LINKS = [
   { title: "Experience", link: "#experience" },
   { title: "Skills", link: "#skills" },
   { title: "Projects", link: "#projects" },
+  { title: "Contact", link: "#contactme" },
 ];
 
 export default function SimpleNavbar() {

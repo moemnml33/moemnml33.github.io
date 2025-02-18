@@ -6,6 +6,7 @@ import PhotoGallery from "./sections/PhotoGallery";
 const bg_color_dark = "bg-zinc-900";
 const bg_color_white = "bg-white";
 // const styling = `${bg_color_dark} container flex-col justify-center min-w-full px-5`;
+import ContactMe from "./sections/ContactMe";
 import Education from "./sections/Education";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
@@ -41,6 +42,7 @@ function App() {
         </div>
         <Skills />
         <Projects />
+        <ContactMe />
       </main>
     </>
   );

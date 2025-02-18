@@ -8,6 +8,7 @@ import {
 import { Image } from "@nextui-org/react";
 import { ScrollShadow } from "@nextui-org/scroll-shadow";
 import { motion } from "framer-motion";
+import { initial, viewport, whileInView } from "../GlobalVariables";
 
 export default function ProfileCard({
   image,
@@ -18,7 +19,12 @@ export default function ProfileCard({
   skillThree,
 }) {
   return (
-    <motion.div className="max-w-[360px] md:max-w-96 bg-cardBackground rounded-3xl shadow-md shadow-zinc-950/80 mb-4">
+    <motion.div
+      className="max-w-[360px] md:max-w-96 bg-cardBackground rounded-3xl shadow-md shadow-zinc-950/80 mb-4"
+      initial={initial}
+      whileInView={whileInView}
+      viewport={viewport}
+    >
       <CardHeader
         floated={false}
         className="bg-transparent rounded-2xl aspect-w-16 aspect-h-9 shadow-md shadow-zinc-950/80"

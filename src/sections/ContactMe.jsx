@@ -1,8 +1,10 @@
 import emailjs from "@emailjs/browser";
-import { Card, CardBody, Typography } from "@material-tailwind/react";
+import { CardBody, Typography } from "@material-tailwind/react";
+import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import MotionSection from "../components/MotionSection";
 import TextHighlight from "../components/TextHighlight";
+import { initial, viewport, whileInView } from "../GlobalVariables";
 
 export default function ContactMe() {
   const form = useRef();
@@ -43,8 +45,13 @@ export default function ContactMe() {
           <TextHighlight>let's make something great together</TextHighlight>.
         </Typography>
       </div>
-      <Card className="bg-cardBackground rounded-3xl shadow-md shadow-zinc-950/80 mb-4 max-w-2xl lg:max-w-4xl justify-center mx-auto">
-        <CardBody className="bg-cardBackground flex flex-col items-center justify-center rounded-3xl">
+      <motion.div
+        className="bg-cardBackground rounded-3xl shadow-md shadow-zinc-950/80 mb-4 max-w-2xl lg:max-w-3xl justify-center mx-auto p-2"
+        initial={initial}
+        whileInView={whileInView}
+        viewport={viewport}
+      >
+        <CardBody className="bg-cardBackground flex flex-col items-center justify-center rounded-3xl p-4">
           {successMessage || (
             <div className="text-xl mb-3 text-green-600">{successMessage}</div>
           )}
@@ -53,26 +60,26 @@ export default function ContactMe() {
             onSubmit={sendEmail}
             className="flex flex-col gap-4 w-full"
           >
-            <label className="text-zinc-400 text-lg">Name</label>
+            <label className="text-zinc-400 text-lg">Name:</label>
             <input
               type="text"
               name="user_name"
-              className="p-3 w-full rounded-md bg-zinc-800 text-white border border-zinc-700 focus:border-cyan-400"
+              className="p-3 w-full rounded-md bg-zinc-850 text-white border border-zinc-700 focus:border-cyan-400"
               required
             />
 
-            <label className="text-zinc-400 text-lg">Email</label>
+            <label className="text-zinc-400 text-lg">Email:</label>
             <input
               type="email"
               name="user_email"
-              className="p-3 w-full rounded-md bg-zinc-800 text-white border border-zinc-700 focus:border-cyan-400"
+              className="p-3 w-full rounded-md bg-zinc-850 text-white border border-zinc-700 focus:border-cyan-400"
               required
             />
 
-            <label className="text-zinc-400 text-lg">Message</label>
+            <label className="text-zinc-400 text-lg">Message:</label>
             <textarea
               name="message"
-              className="p-3 w-full rounded-md bg-zinc-800 text-white border border-zinc-700 focus:border-cyan-400 resize-none"
+              className="p-3 w-full rounded-md bg-zinc-850 text-white border border-zinc-700 focus:border-cyan-400 h-40"
               rows="4"
               required
             />
@@ -80,11 +87,11 @@ export default function ContactMe() {
             <input
               type="submit"
               value="Send Message"
-              className="mt-2 cursor-pointer p-3 w-full rounded-lg bg-cyan-500 text-white font-medium hover:bg-cyan-600 transition-all max-w-max self-end"
+              className="mt-2 cursor-pointer p-2 w-full rounded-lg bg-cyan-500 text-white font-medium hover:bg-cyan-600 transition-all max-w-max self-end"
             />
           </form>
         </CardBody>
-      </Card>
+      </motion.div>
     </MotionSection>
   );
 }

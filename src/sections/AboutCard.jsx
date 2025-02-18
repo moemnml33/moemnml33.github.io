@@ -8,6 +8,7 @@ import {
 import { motion } from "framer-motion";
 import moebooka from "../assets/gallery/moebooka.JPEG";
 import TextHighlight from "../components/TextHighlight";
+import { initial, viewport, whileInView } from "../GlobalVariables";
 
 export default function AboutCard() {
   const handleGithub = () => {
@@ -36,12 +37,9 @@ export default function AboutCard() {
     <motion.div
       className="container flex flex-col sm:px-8 pt-12 sm:pb-4 md:pb-8 lg:mx-12 max-w-[850px]"
       id="about"
-      initial={{ opacity: 0 }}
-      whileInView={{
-        opacity: 1,
-        transition: { delay: 0, duration: 2 },
-      }}
-      viewport={{ once: true, amount: 0.1 }}
+      initial={initial}
+      whileInView={whileInView}
+      viewport={viewport}
     >
       <Card className="my-8 bg-transparent shadow-transparent">
         <Avatar src={moebooka} alt="avatar" size="xl" />

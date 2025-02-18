@@ -2,6 +2,7 @@ import { Avatar, CardHeader, Typography } from "@material-tailwind/react";
 import { ScrollShadow } from "@nextui-org/scroll-shadow";
 import { motion } from "framer-motion";
 import React, { useEffect } from "react";
+import { initial, viewport, whileInView } from "../GlobalVariables";
 
 export function SkillCard({ icon: Icon, title, children, date }) {
   // code to disable border on touch screens aka mobile cause it does some weird behaviour where
@@ -22,13 +23,9 @@ export function SkillCard({ icon: Icon, title, children, date }) {
   return (
     <motion.div
       className="bg-cardBackground rounded-3xl p-1 max-w-2xl justify-self-center shadow-md shadow-zinc-950/80 py-2"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{
-        opacity: 1,
-        y: 0,
-        transition: { delay: 0, duration: 0.7 },
-      }}
-      viewport={{ once: true, amount: 0.1 }}
+      initial={initial}
+      whileInView={whileInView}
+      viewport={viewport}
     >
       <CardHeader
         className="bg-cardBackground flex items-center justify-between rounded-3xl overflow-visible mt-1 mr-1 relative"
